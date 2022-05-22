@@ -1,0 +1,55 @@
+$date
+	Mon May 23 00:00:15 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module and2_test $end
+$var wire 1 ! out $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$scope module dd0 $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+0!
+$end
+#5
+1#
+#10
+0#
+1"
+#15
+1!
+1#
+#20
+0!
+0#
+0"
+#25
+1#
+#30
+0#
+1"
+#35
+1!
+1#
+#40
+0!
+0#
+0"
+#45
+1#
+#50
+0#
+1"
