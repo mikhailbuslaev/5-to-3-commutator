@@ -1,0 +1,64 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001cc5495e990 .scope module, "nand2_test" "nand2_test" 2 4;
+ .timescale -9 -9;
+v000001cc549a5500_0 .var "a", 0 0;
+v000001cc549a55a0_0 .var "b", 0 0;
+v000001cc549a5640_0 .net "out", 0 0, L_000001cc549a4780;  1 drivers
+S_000001cc549a5230 .scope module, "dd0" "nand2" 2 11, 3 2 0, S_000001cc5495e990;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "out";
+L_000001cc54957180 .functor AND 1, v000001cc549a5500_0, v000001cc549a55a0_0, C4<1>, C4<1>;
+L_000001cc549a4780 .functor NOT 1, L_000001cc54957180, C4<0>, C4<0>, C4<0>;
+v000001cc5495eee0_0 .net *"_ivl_0", 0 0, L_000001cc54957180;  1 drivers
+v000001cc54956d50_0 .net "a", 0 0, v000001cc549a5500_0;  1 drivers
+v000001cc549a53c0_0 .net "b", 0 0, v000001cc549a55a0_0;  1 drivers
+v000001cc549a5460_0 .net "out", 0 0, L_000001cc549a4780;  alias, 1 drivers
+    .scope S_000001cc5495e990;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001cc549a5500_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001cc549a55a0_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_000001cc5495e990;
+T_1 ;
+    %delay 10, 0;
+    %load/vec4 v000001cc549a5500_0;
+    %inv;
+    %store/vec4 v000001cc549a5500_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_000001cc5495e990;
+T_2 ;
+    %delay 5, 0;
+    %load/vec4 v000001cc549a55a0_0;
+    %inv;
+    %store/vec4 v000001cc549a55a0_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_000001cc5495e990;
+T_3 ;
+    %vpi_call 2 15 "$dumpfile", "nand2_test.vcd" {0 0 0};
+    %vpi_call 2 16 "$dumpvars" {0 0 0};
+    %vpi_call 2 17 "$display", "test complete" {0 0 0};
+    %delay 50, 0;
+    %vpi_call 2 19 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "nand2_test.v";
+    "./nand2.v";
