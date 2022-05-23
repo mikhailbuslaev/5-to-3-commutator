@@ -4,7 +4,7 @@ module d_trigger(d,clk,q,qbar);
     output qbar;
     input d, clk;
     assign qbar = ~q;
-    always @ (posedge d or negedge d) begin
+    always @ (d or clk) begin
         if (clk)
        #1 q = d;
     end

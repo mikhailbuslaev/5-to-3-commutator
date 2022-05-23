@@ -1,0 +1,327 @@
+$date
+	Mon May 23 06:54:30 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mem_reg_test $end
+$var wire 3 ! out [2:0] $end
+$var reg 1 " clk $end
+$var reg 3 # control [2:0] $end
+$scope module dd0 $end
+$var wire 1 " clk $end
+$var wire 3 $ control [2:0] $end
+$var wire 3 % out [2:0] $end
+$scope module dd0 $end
+$var wire 1 " clk $end
+$var wire 1 & d $end
+$var wire 1 ' qbar $end
+$var reg 1 ( q $end
+$upscope $end
+$scope module dd1 $end
+$var wire 1 " clk $end
+$var wire 1 ) d $end
+$var wire 1 * qbar $end
+$var reg 1 + q $end
+$upscope $end
+$scope module dd2 $end
+$var wire 1 " clk $end
+$var wire 1 , d $end
+$var wire 1 - qbar $end
+$var reg 1 . q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x.
+x-
+0,
+x+
+x*
+0)
+x(
+x'
+0&
+bx %
+b0 $
+b0 #
+0"
+bx !
+$end
+#25
+1,
+b100 #
+b100 $
+#27
+1)
+b110 #
+b110 $
+#30
+1&
+b111 #
+b111 $
+#50
+0,
+b11 #
+b11 $
+1"
+#51
+1-
+b0xx !
+b0xx %
+0.
+#54
+0)
+b1 #
+b1 $
+#55
+1*
+b0x !
+b0x %
+0+
+#60
+0&
+b0 #
+b0 $
+#61
+1'
+b0 !
+b0 %
+0(
+#75
+1,
+b100 #
+b100 $
+#76
+0-
+b100 !
+b100 %
+1.
+#81
+1)
+b110 #
+b110 $
+#82
+0*
+b110 !
+b110 %
+1+
+#90
+1&
+b111 #
+b111 $
+#91
+0'
+b111 !
+b111 %
+1(
+#100
+0,
+b11 #
+b11 $
+0"
+#108
+0)
+b1 #
+b1 $
+#120
+0&
+b0 #
+b0 $
+#125
+1,
+b100 #
+b100 $
+#135
+1)
+b110 #
+b110 $
+#150
+0,
+1&
+b11 #
+b11 $
+1"
+#151
+1-
+b11 !
+b11 %
+0.
+#162
+0)
+b1 #
+b1 $
+#163
+1*
+b1 !
+b1 %
+0+
+#175
+1,
+b101 #
+b101 $
+#176
+0-
+b101 !
+b101 %
+1.
+#180
+0&
+b100 #
+b100 $
+#181
+1'
+b100 !
+b100 %
+0(
+#189
+1)
+b110 #
+b110 $
+#190
+0*
+b110 !
+b110 %
+1+
+#200
+0,
+b10 #
+b10 $
+0"
+#210
+1&
+b11 #
+b11 $
+#216
+0)
+b1 #
+b1 $
+#225
+1,
+b101 #
+b101 $
+#240
+0&
+b100 #
+b100 $
+#243
+1)
+b110 #
+b110 $
+#250
+0,
+b10 #
+b10 $
+1"
+#251
+1-
+b10 !
+b10 %
+0.
+#270
+0)
+1&
+b1 #
+b1 $
+#271
+1*
+0'
+0+
+b1 !
+b1 %
+1(
+#275
+1,
+b101 #
+b101 $
+#276
+0-
+b101 !
+b101 %
+1.
+#297
+1)
+b111 #
+b111 $
+#298
+0*
+b111 !
+b111 %
+1+
+#300
+0,
+0&
+b10 #
+b10 $
+0"
+#324
+0)
+b0 #
+b0 $
+#325
+1,
+b100 #
+b100 $
+#330
+1&
+b101 #
+b101 $
+#350
+0,
+b1 #
+b1 $
+1"
+#351
+1-
+1)
+b11 !
+b11 %
+0.
+b11 #
+b11 $
+#360
+0&
+b10 #
+b10 $
+#361
+1'
+b10 !
+b10 %
+0(
+#375
+1,
+b110 #
+b110 $
+#376
+0-
+b110 !
+b110 %
+1.
+#378
+0)
+b100 #
+b100 $
+#379
+1*
+b100 !
+b100 %
+0+
+#390
+1&
+b101 #
+b101 $
+#391
+0'
+b101 !
+b101 %
+1(
+#400
+0,
+b1 #
+b1 $
+0"
