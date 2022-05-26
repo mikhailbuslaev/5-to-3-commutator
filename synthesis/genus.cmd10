@@ -1,0 +1,17 @@
+# Cadence Genus(TM) Synthesis Solution, Version 19.10-p002_1, built May 21 2019 13:26:01
+
+# Date: Wed May 25 20:04:37 2022
+# Host: srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+gui_show
+set OUTPUT_DIR ./run_dir
+set_attribute lib_search_path ../library
+set_attribute library {gsclib045_fast.lib}
+load -v2001 ../rtl/commutator.v
+elaborate
+set DESIGN commutator
+elaborate
+synthesize -to_mapped -eff high -no_incr
+write -mapped > ${DESIGN}_synth.v
+write_design -innovus ${DESIGN}

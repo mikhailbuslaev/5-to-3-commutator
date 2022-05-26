@@ -1,0 +1,134 @@
+[05/24 21:47:20      0s] 
+[05/24 21:47:20      0s] Cadence Innovus(TM) Implementation System.
+[05/24 21:47:20      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/24 21:47:20      0s] 
+[05/24 21:47:20      0s] Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+[05/24 21:47:20      0s] Options:	
+[05/24 21:47:20      0s] Date:		Tue May 24 21:47:20 2022
+[05/24 21:47:20      0s] Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+[05/24 21:47:20      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/24 21:47:20      0s] 
+[05/24 21:47:20      0s] License:
+[05/24 21:47:20      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[05/24 21:47:20      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/24 21:47:30      9s] @(#)CDS: Innovus v19.10-p002_1 (64bit) 04/19/2019 15:18 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 21:47:30      9s] @(#)CDS: NanoRoute 19.10-p002_1 NR190418-1643/19_10-UB (database version 18.20, 458.7.1) {superthreading v1.51}
+[05/24 21:47:30      9s] @(#)CDS: AAE 19.10-b002 (64bit) 04/19/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 21:47:30      9s] @(#)CDS: CTE 19.10-p002_1 () Apr 19 2019 06:39:48 ( )
+[05/24 21:47:30      9s] @(#)CDS: SYNTECH 19.10-b001_1 () Apr  4 2019 03:00:51 ( )
+[05/24 21:47:30      9s] @(#)CDS: CPE v19.10-p002
+[05/24 21:47:30      9s] @(#)CDS: IQuantus/TQuantus 19.1.0-e101 (64bit) Thu Feb 28 10:29:46 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 21:47:30      9s] @(#)CDS: OA 22.60-p012 Thu Dec 20 13:36:08 2018
+[05/24 21:47:30      9s] @(#)CDS: SGN 18.10-d003 (18-Jul-2018) (64 bit executable, Qt5.9.1)
+[05/24 21:47:30      9s] @(#)CDS: RCDB 11.14.18
+[05/24 21:47:30      9s] @(#)CDS: STYLUS 19.10-b001_1 (03/15/2019 08:18 PDT)
+[05/24 21:47:30      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_16474_srv-eda-04_r10021492_DODUuN.
+
+[05/24 21:47:30      9s] Change the soft stacksize limit to 0.2%RAM (3095 mbytes). Set global soft_stack_size_limit to change the value.
+[05/24 21:47:31     10s] 
+[05/24 21:47:31     10s] **INFO:  MMMC transition support version v31-84 
+[05/24 21:47:31     10s] 
+[05/24 21:47:31     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/24 21:47:31     10s] <CMD> suppressMessage ENCEXT-2799
+[05/24 21:47:31     10s] <CMD> getVersion
+[05/24 21:47:31     10s] [INFO] Loading PVS 16.15 fill procedures
+[05/24 21:47:31     10s] <CMD> win
+[05/24 21:51:05     20s] <CMD> set init_gnd_net {vssc vsso}
+[05/24 21:51:05     20s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 21:51:05     20s] <CMD> set init_verilog genus.v
+[05/24 21:51:05     20s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 21:51:05     20s] <CMD> set init_top_cell top
+[05/24 21:51:05     20s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 21:51:05     20s] <CMD> init_design
+[05/24 21:51:05     20s] #% Begin Load MMMC data ... (date=05/24 21:51:05, mem=530.4M)
+[05/24 21:51:05     20s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> set init_gnd_net {vssc vsso}
+[05/24 21:51:14     20s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 21:51:14     20s] <CMD> set init_verilog genus.v
+[05/24 21:51:14     20s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 21:51:14     20s] <CMD> set init_top_cell top
+[05/24 21:51:14     20s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 21:51:14     20s] <CMD> init_design
+[05/24 21:51:14     20s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 21:51:14     20s] % Begin Load MMMC data ... (date=05/24 21:51:14, mem=530.5M)
+[05/24 21:51:14     20s] Extraction setup Started 
+[05/24 21:51:14     20s] Extraction setup Started 
+[05/24 21:51:14     20s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> set init_gnd_net {vssc vsso}
+[05/24 21:51:38     21s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 21:51:38     21s] <CMD> set init_verilog genus.v
+[05/24 21:51:38     21s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 21:51:38     21s] <CMD> set init_top_cell top
+[05/24 21:51:38     21s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 21:51:38     21s] <CMD> init_design
+[05/24 21:51:38     21s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 21:51:38     21s] % Begin Load MMMC data ... (date=05/24 21:51:38, mem=530.8M)
+[05/24 21:51:38     21s] Extraction setup Started 
+[05/24 21:51:38     21s] Extraction setup Started 
+[05/24 21:51:38     21s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> zoomBox -0.01600 -0.01200 0.11200 0.10600
+[05/24 21:52:24     23s] <CMD> set init_gnd_net {vssc vsso}
+[05/24 21:52:24     23s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 21:52:24     23s] <CMD> set init_design_settop 0
+[05/24 21:52:24     23s] <CMD> set init_verilog genus.v
+[05/24 21:52:24     23s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 21:52:24     23s] <CMD> set init_top_cell top
+[05/24 21:52:24     23s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 21:52:24     23s] <CMD> init_design
+[05/24 21:52:24     23s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 21:52:24     23s] % Begin Load MMMC data ... (date=05/24 21:52:24, mem=530.7M)
+[05/24 21:52:24     23s] Extraction setup Started 
+[05/24 21:52:24     23s] Extraction setup Started 
+[05/24 21:52:24     23s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> set init_gnd_net {vssc vsso}
+[05/24 21:52:40     24s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 21:52:40     24s] <CMD> set init_verilog genus.v
+[05/24 21:52:40     24s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 21:52:40     24s] <CMD> set init_top_cell top
+[05/24 21:52:40     24s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 21:52:40     24s] <CMD> init_design
+[05/24 21:52:40     24s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 21:52:40     24s] % Begin Load MMMC data ... (date=05/24 21:52:40, mem=530.8M)
+[05/24 21:52:40     24s] Extraction setup Started 
+[05/24 21:52:40     24s] Extraction setup Started 
+[05/24 21:52:40     24s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> set init_gnd_net {vssc vsso}
+[05/24 22:11:54     68s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 22:11:54     68s] <CMD> set init_verilog genus.v
+[05/24 22:11:54     68s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 22:11:54     68s] <CMD> set init_top_cell top
+[05/24 22:11:54     68s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 22:11:54     68s] <CMD> init_design
+[05/24 22:11:54     68s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 22:11:54     68s] % Begin Load MMMC data ... (date=05/24 22:11:54, mem=531.0M)
+[05/24 22:11:54     68s] Extraction setup Started 
+[05/24 22:11:54     68s] Extraction setup Started 
+[05/24 22:11:54     68s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+<CMD> set init_gnd_net {vssc vsso}
+[05/24 22:11:55     68s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 22:11:55     68s] <CMD> set init_verilog genus.v
+[05/24 22:11:55     68s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 22:11:55     68s] <CMD> set init_top_cell top
+[05/24 22:11:55     68s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 22:11:55     68s] <CMD> init_design
+[05/24 22:11:55     68s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/24 22:11:55     68s] % Begin Load MMMC data ... (date=05/24 22:11:55, mem=531.0M)
+[05/24 22:11:55     68s] Extraction setup Started 
+[05/24 22:11:55     68s] Extraction setup Started 
+[05/24 22:11:56     68s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue May 24 22:17:54 2022
+  Total CPU time:     0:01:22
+  Total real time:    0:30:35
+  Peak memory (main): 537.03MB
+
+[05/24 22:17:54     81s] 
+[05/24 22:17:54     81s] *** Memory Usage v#1 (Current mem = 758.461M, initial mem = 264.684M) ***
+[05/24 22:17:54     81s] 
+[05/24 22:17:54     81s] *** Summary of all messages that are not suppressed in this session:
+[05/24 22:17:54     81s] Severity  ID               Count  Summary                                  
+[05/24 22:17:54     81s] ERROR     TCLCMD-989           7  cannot open SDC file '%s' for mode '%s'  
+[05/24 22:17:54     81s] *** Message Summary: 0 warning(s), 7 error(s)
+[05/24 22:17:54     81s] 
+[05/24 22:17:54     81s] --- Ending "Innovus" (totcpu=0:01:22, real=0:30:34, mem=758.5M) ---

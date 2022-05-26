@@ -1,0 +1,1958 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+Options:	
+Date:		Wed May 25 01:02:04 2022
+Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	19.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (3095 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 16.15 fill procedures
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set dbgDualViewAwareXTree 1
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set enable_ilm_dual_view_gui_and_attribute 1
+<CMD> set enc_enable_print_mode_command_reset_options 1
+<CMD> set init_gnd_net {vssc vsso}
+<CMD> set init_io_file top.save.io
+<CMD> set init_lef_file {gsclib045_tech.lef gsclib045_macro.lef giolib045.lef}
+<CMD> set init_mmmc_file genus_invs_des/genus.mmode.tcl
+<CMD> set init_pwr_net {vddc vddo}
+<CMD> set init_top_cell top
+<CMD> set init_verilog genus_invs_des/genus.v
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set metric_page_cfg_format {html {HUDDLE {!!seq {{!!map {Summary {!!seq {{!!map {summary_flow {!!map {type {!!str header} title {!!str {}}}}}} {!!map {summary_flow_t {!!map {type {!!str vertical_table} auto_hide {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.name} title {!!str Design}}} {!!map {metric {!!str flow.tool_list} title {!!str Tools}}} {!!map {metric {!!str flow.template.type} title {!!str Flow}}} {!!map {metric {!!str flow.template.feature_enabled} title {!!str {Enabled features}}}} {!!map {metric {!!str flow.run_tag} title {!!str Tag}}} {!!map {metric {!!str flow.machine} title {!!str {Run host}}}} {!!map {metric {!!str flow.run_directory} title {!!str {Run directory}}}} {!!map {metric {!!str flow.last_child_snapshot} title {!!str {Last step}}}}}}}}}} {!!map {design_image {!!map {type {!!str image_plot} ar_metric {!!seq {{!!map {metric {!!str design.floorplan.image} title {!!str {Design Display}}}}}}}}}} {!!map {summary_qor {!!map {type {!!str header} title {!!str {Stylus QOR summary}}}}}} {!!map {summary_qor_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.setup.wns} title {!!str WNS} group {!!str {Setup (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns} title {!!str TNS} group {!!str {Setup (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps} title {!!str FEPS} group {!!str {Setup (all)}}}} {!!map {metric {!!str timing.setup.wns.path_group:reg2reg} title {!!str WNS} group {!!str {Setup (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns.path_group:reg2reg} title {!!str TNS} group {!!str {Setup (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps.path_group:reg2reg} title {!!str FEPS} group {!!str {Setup (reg2reg)}}}} {!!map {metric {!!str timing.hold.wns} title {!!str WNS} group {!!str {Hold (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns} title {!!str TNS} group {!!str {Hold (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps} title {!!str FEPS} group {!!str {Hold (all)}}}} {!!map {metric {!!str timing.hold.wns.path_group:reg2reg} title {!!str WNS} group {!!str {Hold (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns.path_group:reg2reg} title {!!str TNS} group {!!str {Hold (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps.path_group:reg2reg} title {!!str FEPS} group {!!str {Hold (reg2reg)}}}} {!!map {metric {!!str timing.drv.max_tran.total} title {!!str Tran} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_cap.total} title {!!str Load} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_fanout.total} title {!!str Fanout} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str clock.instances.total} title {!!str Insts} group {!!str Clock} link_table {!!str clock_phys}}} {!!map {metric {!!str clock.area.total} title {!!str Area} group {!!str Clock} link_table {!!str clock_phys}}} {!!map {metric {!!str design.density} title {!!str Density} group {!!str Design}}} {!!map {metric {!!str design.instances.logical} title {!!str Insts} group {!!str Design} link_table {!!str physical_physical}}} {!!map {metric {!!str design.area.logical} title {!!str Area} group {!!str Design} link_table {!!str physical_physical}}} {!!map {metric {!!str power.leakage} title {!!str Leakage} group {!!str Power} link_table {!!str power_power}}} {!!map {metric {!!str route.drc} title {!!str DRC} group {!!str Route} link_table {!!str route_route}}} {!!map {metric {!!str route.wirelength} title {!!str WL} group {!!str Route} link_table {!!str route_route}}} {!!map {metric {!!str messages} title {!!str Errors} group {!!str Tool}}} {!!map {metric {!!str flow.realtime} title {!!str Wall} group {!!str Tool} link_table {!!str flow_cpu}}} {!!map {metric {!!str flow.memory} title {!!str Memory} group {!!str Tool} link_table {!!str flow_cpu}}}}}}}}} {!!map {summary_cpu {!!map {type {!!str header} title {!!str {Stylus runtime summary}}}}}} {!!map {summary_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Timing {!!seq {{!!map {timing_setup {!!map {type {!!str header} title {!!str {Setup Timing}}}}}} {!!map {setup_tns_histogram {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.setup.histogram} title {!!str {Setup TNS (Per Group)}}}} show_label_every {!!int 10}}}}} {!!map {setup_tns_view_histogram {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.setup.histogram.views} title {!!str {Setup TNS (Per View)}}}} show_label_every {!!int 10}}}}} {!!map {timing_setup_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Group {!!str timing.setup.wns.path_group:*} View {!!str timing.setup.wns.analysis_view:*}}} collapsible_key {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.setup.wns.path_group:%.analysis_view:%} title {!!str WNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns.path_group:%.analysis_view:%} title {!!str TNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps.path_group:%.analysis_view:%} title {!!str FEPS}}}}}}}}} {!!map {timing_setup_pba {!!map {type {!!str header} title {!!str {Setup (PBA) Timing}}}}}} {!!map {setup_tns_histogram_pba {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.setup.pba.histogram} title {!!str {Setup (PBA) TNS (Per Group)}}}} show_label_every {!!int 10}}}}} {!!map {setup_tns_view_histogram_pba {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.setup.pba.histogram.views} title {!!str {Setup (PBA) TNS (Per View)}}}} show_label_every {!!int 10}}}}} {!!map {timing_hold {!!map {type {!!str header} title {!!str {Hold Timing}}}}}} {!!map {hold_tns_histogram {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.hold.histogram} title {!!str {Hold TNS (Per Group)}}}} show_label_every {!!int 10}}}}} {!!map {hold_tns_view_histogram {!!map {type {!!str histogram} metric {!!map {metric {!!str timing.hold.histogram.views} title {!!str {Hold TNS (Per View)}}}} show_label_every {!!int 10}}}}} {!!map {timing_hold_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Group {!!str timing.hold.wns.path_group:*} View {!!str timing.hold.wns.analysis_view:*}}} collapsible_key {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.hold.wns.path_group:%.analysis_view:%} title {!!str WNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns.path_group:%.analysis_view:%} title {!!str TNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps.path_group:%.analysis_view:%} title {!!str FEPS}}}}}}}}} {!!map {timing_drv {!!map {type {!!str header} title {!!str {Design Rule Violations}}}}}} {!!map {timing_drv_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.drv.max_tran.total} title {!!str Total} group {!!str Tran}}} {!!map {metric {!!str timing.drv.max_tran.worst} title {!!str Worst} group {!!str Tran} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_cap.total} title {!!str Total} group {!!str Cap}}} {!!map {metric {!!str timing.drv.max_cap.worst} title {!!str Worst} group {!!str Cap}}} {!!map {metric {!!str timing.drv.max_fanout.total} title {!!str Total} group {!!str Fanout}}} {!!map {metric {!!str timing.drv.max_fanout.worst} title {!!str Worst} group {!!str Fanout}}} {!!map {metric {!!str timing.si.glitches} title {!!str Glitches} group {!!str SI}}} {!!map {metric {!!str timing.si.noise} title {!!str Noise} group {!!str SI}}}}}}}}} {!!map {timing_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {timing_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Clock {!!seq {{!!map {clock_phys {!!map {type {!!str header} title {!!str Physical}}}}} {!!map {clock_phys_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.instances.total} title {!!str #Total} group {!!str Instances}}} {!!map {metric {!!str {^.*\.(?!total$)[^\.]+$}} title {!!str { }} group {!!str Instances} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances.buffer} title {!!str #Buffers} group {!!str Instances}}} {!!map {metric {!!str clock.instances.inverter} title {!!str #Inverters} group {!!str Instances}}} {!!map {metric {!!str clock.instances.clkgate} title {!!str {#Clock Gates}} group {!!str Instances}}} {!!map {metric {!!str clock.instances.nonicg} title {!!str {#Non Integrated}} group {!!str Instances}}} {!!map {metric {!!str clock.instances.logic} title {!!str #Logic} group {!!str Instances}}} {!!map {metric {!!str clock.area.total} title {!!str Total} group {!!str Area}}} {!!map {metric {!!str {^.*\.(?!total$)[^\.]+$}} title {!!str { }} group {!!str Area} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area.buffer} title {!!str Buffers} group {!!str Area}}} {!!map {metric {!!str clock.area.inverter} title {!!str Inverters} group {!!str Area}}} {!!map {metric {!!str clock.area.clkgate} title {!!str {Clock Gates}} group {!!str Area}}} {!!map {metric {!!str clock.area.nonicg} title {!!str {Non Integrated}} group {!!str Area}}} {!!map {metric {!!str clock.area.logic} title {!!str Logic} group {!!str Area}}} {!!map {metric {!!str clock.nets.length.total} title {!!str {Tot Clk Net Length}} group {!!str Nets}}}}}}}}} {!!map {clock_phys_detail {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_phys_cell_insts {!!map {type {!!str collapse_header} nested {!!map {clock_phys_cell_insts_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.instances.total} title {!!str #Total}}} {!!map {title {!!str { }} group {!!str #Buffers} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances_distribution.buffer.base_cell:*} group {!!str #Buffers}}} {!!map {title {!!str { }} group {!!str #Inverters} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances_distribution.inverter.base_cell:*} group {!!str #Inverters}}} {!!map {title {!!str { }} group {!!str {#Clock Gates}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances_distribution.clkgate.base_cell:*} group {!!str {#Clock Gates}}}} {!!map {title {!!str { }} group {!!str {#Non Integrated}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances_distribution.nonicg.base_cell:*} group {!!str {#Non Integrated}}}} {!!map {title {!!str { }} group {!!str #Logic} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances_distribution.logic.base_cell:*} group {!!str #Logic}}}}}}}}} hidden {!!true 1} title {!!str {Per Cell Instances}}}}}} {!!map {clock_phys_cell_area {!!map {type {!!str collapse_header} nested {!!map {clock_phys_cell_area_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.area.total} title {!!str Total}}} {!!map {title {!!str { }} group {!!str Buffers} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area_distribution.buffer.base_cell:*} group {!!str Buffers}}} {!!map {title {!!str { }} group {!!str Inverters} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area_distribution.inverter.base_cell:*} group {!!str Inverters}}} {!!map {title {!!str { }} group {!!str {Clock Gates}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area_distribution.clkgate.base_cell:*} group {!!str {Clock Gates}}}} {!!map {title {!!str { }} group {!!str {Non Integrated}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area_distribution.nonicg.base_cell:*} group {!!str {Non Integrated}}}} {!!map {title {!!str { }} group {!!str Logic} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area_distribution.logic.base_cell:*} group {!!str Logic}}}}}}}}} hidden {!!true 1} title {!!str {Per Cell Area}}}}}} {!!map {clock_phys_creator {!!map {type {!!str collapse_header} nested {!!map {clock_phys_creator_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {title {!!str { }} group {!!str Buffers} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances.buffer.creator.*} group {!!str Buffers}}} {!!map {title {!!str { }} group {!!str Inverters} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances.inverter.creator.*} group {!!str Inverters}}}}}}}}} hidden {!!true 1} title {!!str {Cell Creators}}}}}} {!!map {clock_phys_nets {!!map {type {!!str collapse_header} nested {!!map {clock_phys_nets_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.nets.length.total} title {!!str Total} group {!!str Nets}}} {!!map {metric {!!str {^.*\.(?!total$)[^\.]+$}} title {!!str { }} group {!!str Nets} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.nets.length.top} title {!!str Top} group {!!str Nets}}} {!!map {metric {!!str clock.nets.length.trunk} title {!!str Trunk} group {!!str Nets}}} {!!map {metric {!!str clock.nets.length.leaf} title {!!str Leaf} group {!!str Nets}}}}}}}}} hidden {!!true 1} title {!!str Nets}}}}} {!!map {clock_phys_cap {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_phys_cap_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {title {!!str { }} group {!!str Wire} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.wire.top} title {!!str Top} group {!!str Wire}}} {!!map {metric {!!str clock.capacitance.wire.trunk} title {!!str Trunk} group {!!str Wire}}} {!!map {metric {!!str clock.capacitance.wire.leaf} title {!!str Leaf} group {!!str Wire}}} {!!map {title {!!str { }} group {!!str Gate} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.gate.top} title {!!str Top} group {!!str Gate}}} {!!map {metric {!!str clock.capacitance.gate.trunk} title {!!str Trunk} group {!!str Gate}}} {!!map {metric {!!str clock.capacitance.gate.leaf} title {!!str Leaf} group {!!str Gate}}} {!!map {title {!!str { }} group {!!str Total} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.total.top} title {!!str Top} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.total.trunk} title {!!str Trunk} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.total.leaf} title {!!str Leaf} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.sink.*} group {!!str Sink}}}}}}}}} {!!map {clock_phys_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_phys_buffer_constraint {!!map {type {!!str collapse_header} nested {!!map {clock_phys_buffer_constraint_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.buffer_depth_constraint.skew_group:*.*}}}}}}}}} hidden {!!true 1} title {!!str {Buffer Depth Constraints}}}}}} {!!map {clock_phys_stage_constraint {!!map {type {!!str collapse_header} nested {!!map {clock_phys_stage_constraint_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.stage_depth_constraint.*}}}}}}}}} hidden {!!true 1} title {!!str {Stage Depth Constraints}}}}}} {!!map {clock_drv {!!map {type {!!str header} title {!!str DRV}}}}} {!!map {clock_drv_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str {clock.drv.nets.remaining transition.count}} title {!!str Count} group {!!str {Remaining Transition}}}} {!!map {metric {!!str {clock.drv.nets.remaining transition.max}} title {!!str Max} group {!!str {Remaining Transition}}}} {!!map {metric {!!str {clock.drv.nets.unfixable transition.count}} title {!!str Count} group {!!str {Unfixable Transition}}}} {!!map {metric {!!str {clock.drv.nets.unfixable transition.max}} title {!!str Max} group {!!str {Unfixable Transition}}}} {!!map {metric {!!str clock.drv.nets.capacitance.count} title {!!str Count} group {!!str Capacitance}}} {!!map {metric {!!str clock.drv.nets.capacitance.max} title {!!str Max} group {!!str Capacitance}}} {!!map {metric {!!str clock.drv.nets.resistance.count} title {!!str Count} group {!!str Resistance}}} {!!map {metric {!!str clock.drv.nets.resistance.max} title {!!str Max} group {!!str Resistance}}} {!!map {metric {!!str clock.drv.nets.length.count} title {!!str Count} group {!!str Length}}} {!!map {metric {!!str clock.drv.nets.length.max} title {!!str Max} group {!!str Length}}} {!!map {metric {!!str clock.drv.nets.fanout.count} title {!!str Count} group {!!str Fanout}}} {!!map {metric {!!str clock.drv.nets.fanout.max} title {!!str Max} group {!!str Fanout}}}}}}}}} {!!map {clock_drv_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_drv_detail {!!map {type {!!str collapse_header} nested {!!map {clock_drv_detail_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str {clock.drv.nets.remaining transition.*}} group {!!str {Remaining Transition}}}} {!!map {metric {!!str {clock.drv.nets.unfixable transition.*}} group {!!str {Unfixable Transition}}}} {!!map {metric {!!str clock.drv.nets.capacitance.*} group {!!str Capacitance}}} {!!map {metric {!!str clock.drv.nets.resistance.*} group {!!str Resistance}}} {!!map {metric {!!str clock.drv.nets.length.*} group {!!str Length}}} {!!map {metric {!!str clock.drv.nets.fanout.*} group {!!str Fanout}}}}}}}}} hidden {!!true 1} title {!!str Detail}}}}} {!!map {clock_drv_halo {!!map {type {!!str collapse_header} nested {!!map {clock_drv_halo_t {!!map {type {!!str table} auto_hide {!!true 1} key {!!map {{Clock Tree} {!!str clock.halo.clock_tree:*.count}}} ar_metric {!!seq {{!!map {metric {!!str clock.halo.clock_tree:%.count} group {!!str Count}}} {!!map {metric {!!str clock.halo.clock_tree:%.violations} group {!!str Violations}}}}}}}}} hidden {!!true 1} title {!!str {Clock Halo}}}}}} {!!map {clock_drv_tran_tar {!!map {type {!!str header} title {!!str Transition}}}}} {!!map {clock_drv_tran_tar_t {!!map {type {!!str table} auto_hide {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.transition.target.primary_half_corner.top.*} group {!!str {Top Transition Target Stats}}}} {!!map {metric {!!str clock.transition.target.primary_half_corner.trunk.*} group {!!str {Trunk Transition Target Stats}}}} {!!map {metric {!!str clock.transition.target.primary_half_corner.leaf.*} group {!!str {Leaf Transition Target Stats}}}}}}}}}} {!!map {clock_drv_tran {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_drv_tran_tar_early {!!map {type {!!str collapse_header} nested {!!map {clock_drv_tran_tar_early_t {!!map {type {!!str table} auto_hide {!!true 1} key {!!map {{Corner | Clock Tree} {!!str clock.transition.target.delay_corner:*.early.top.clock_tree:*}}} ar_metric {!!seq {{!!map {metric {!!str clock.transition.auto_target.delay_corner:%.early.clock_tree:%} group {!!str {Auto Target}}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.early.top.clock_tree:%} group {!!str Top}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.early.trunk.clock_tree:%} group {!!str Trunk}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.early.leaf.clock_tree:%} group {!!str Leaf}}}}}}}}} hidden {!!true 1} title {!!str {Per corner/clock tree transition Target (early)}}}}}} {!!map {clock_drv_tran_tar_late {!!map {type {!!str collapse_header} nested {!!map {clock_drv_tran_tar_late_t {!!map {type {!!str table} auto_hide {!!true 1} key {!!map {{Corner | Clock Tree} {!!str clock.transition.target.delay_corner:*.late.top.clock_tree:*}}} ar_metric {!!seq {{!!map {metric {!!str clock.transition.auto_target.delay_corner:%.late.clock_tree:%} group {!!str {Auto Target}}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.late.top.clock_tree:%} group {!!str Top}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.late.trunk.clock_tree:%} group {!!str Trunk}}} {!!map {metric {!!str clock.transition.target.delay_corner:%.late.leaf.clock_tree:%} group {!!str Leaf}}}}}}}}} hidden {!!true 1} title {!!str {Per corner/clock tree transition Target (late)}}}}}} {!!map {clock_drv_tran_top {!!map {type {!!str collapse_header} nested {!!map {clock_drv_tran_top_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Target {!!str clock.transition.primary_half_corner.top.*.max}}} ar_metric {!!seq {{!!map {metric {!!str clock.transition.primary_half_corner.top.%.*}}}}}}}}} hidden {!!true 1} title {!!str {Top Transition Distribution}}}}}} {!!map {clock_drv_tran_trunk {!!map {type {!!str collapse_header} nested {!!map {clock_drv_tran_trunk_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Target {!!str clock.transition.primary_half_corner.trunk.*.max}}} ar_metric {!!seq {{!!map {metric {!!str clock.transition.primary_half_corner.trunk.%.*}}}}}}}}} hidden {!!true 1} title {!!str {Trunk Transition Distribution}}}}}} {!!map {clock_drv_tran_leaf {!!map {type {!!str collapse_header} nested {!!map {clock_drv_tran_leaf_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Target {!!str clock.transition.primary_half_corner.leaf.*.max}}} ar_metric {!!seq {{!!map {metric {!!str clock.transition.primary_half_corner.leaf.%.*}}}}}}}}} hidden {!!true 1} title {!!str {Leaf Transition Distribution}}}}}} {!!map {clock_skew {!!map {type {!!str header} title {!!str Latency/Skew}}}}} {!!map {clock_skew_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.latency.primary_reporting_skew_group.primary_half_corner.*} group {!!str Latency}}} {!!map {metric {!!str clock.skew.primary_reporting_skew_group.primary_half_corner.*} group {!!str Skew}}} {!!map {metric {!!str clock.skew.primary_reporting_skew_group.primary_half_corner.skew_band.*} group {!!str {Skew Band}}}}}}}}}} {!!map {clock_skew_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_skew_early_detail {!!map {type {!!str collapse_header} nested {!!map {clock_skew_early_detail_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} key {!!map {{Skew Group | Corner} {!!str clock.skew.skew_group:*.delay_corner:*.early.total}}} ar_metric {!!seq {{!!map {metric {!!str clock.latency.skew_group:%.delay_corner:%.early.*} group {!!str Latency}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.total} title {!!str Total}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.gate} title {!!str Gate}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.wire} title {!!str Wire}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.target} title {!!str Target}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.target_met} title {!!str {Target Met}}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.early.skew_band.*} group {!!str {Skew band}}}}}}}}}} hidden {!!true 1} title {!!str {Per group/corner (early)}}}}}} {!!map {clock_skew_late_detail {!!map {type {!!str collapse_header} nested {!!map {clock_skew_late_detail_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} key {!!map {{Skew Group | Corner} {!!str clock.skew.skew_group:*.delay_corner:*.late.total}}} ar_metric {!!seq {{!!map {metric {!!str clock.latency.skew_group:%.delay_corner:%.late.*} group {!!str Latency}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.total} title {!!str Total} group {!!str Skew}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.gate} title {!!str Gate} group {!!str Skew}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.wire} title {!!str Wire} group {!!str Skew}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.target} title {!!str Target} group {!!str Skew}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.target_met} title {!!str {Target Met}} group {!!str Skew}}} {!!map {metric {!!str clock.skew.skew_group:%.delay_corner:%.late.skew_band.*} group {!!str {Skew band}}}}}}}}}} hidden {!!true 1} title {!!str {Per group/corner (late)}}}}}} {!!map {cts_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {cts_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Design {!!seq {{!!map {physical_physical {!!map {type {!!str header} title {!!str Physical}}}}} {!!map {physical_physical_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.density} title {!!str Density}}} {!!map {metric {!!str design.instances.logical} title {!!str {Logical instances}}}} {!!map {metric {!!str design.area.logical} title {!!str {Logical area}}}} {!!map {metric {!!str design.instances} title {!!str {Total instances}}}} {!!map {metric {!!str design.area} title {!!str {Total area}}}} {!!map {metric {!!str design.blockages.place.area} title {!!str {Blocked area}}}}}}}}}} {!!map {physical_physical_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {physical_physical_insts {!!map {type {!!str collapse_header} nested {!!map {physical_physical_insts_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {title {!!str { }} group {!!str {Standard Cell}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str design.instances.register} title {!!str register} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.icg} title {!!str icg} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.latch} title {!!str latch} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.buffer} title {!!str buffer} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.inverter} title {!!str inverter} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.combinatorial} title {!!str combo} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.instances.std_cell} title {!!str total} group {!!str {Total (SC)}}}} {!!map {metric {!!str design.instances.macro} title {!!str macro} group {!!str Other}}} {!!map {metric {!!str design.instances.physical} title {!!str physical} group {!!str Other}}} {!!map {metric {!!str design.instances.io} title {!!str io} group {!!str Other}}} {!!map {metric {!!str design.instances.blackbox} title {!!str blackbox} group {!!str Other}}} {!!map {metric {!!str design.instances.power_switch} title {!!str power_switch} group {!!str MSV}}} {!!map {metric {!!str design.instances.isolation} title {!!str isolation} group {!!str MSV}}} {!!map {metric {!!str design.instances.level_shifter} title {!!str level_shifter} group {!!str MSV}}} {!!map {metric {!!str design.instances.always_on} title {!!str always_on} group {!!str MSV}}} {!!map {metric {!!str design.instances} title {!!str total} group {!!str Total}}}}}}}}} hidden {!!true 1} title {!!str {Instances Detail}}}}}} {!!map {physical_physical_area {!!map {type {!!str collapse_header} nested {!!map {physical_physical_area_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {title {!!str { }} group {!!str {Standard Cell}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str design.area.register} title {!!str register} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.icg} title {!!str icg} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.latch} title {!!str latch} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.buffer} title {!!str buffer} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.inverter} title {!!str inverter} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.combinatorial} title {!!str combo} group {!!str {Standard Cell}}}} {!!map {metric {!!str design.area.std_cell} title {!!str total} group {!!str {Total (SC)}}}} {!!map {metric {!!str design.area.macro} title {!!str macro} group {!!str Other}}} {!!map {metric {!!str design.area.physical} title {!!str physical} group {!!str Other}}} {!!map {metric {!!str design.area.io} title {!!str io} group {!!str Other}}} {!!map {metric {!!str design.area.blackbox} title {!!str blackbox} group {!!str Other}}} {!!map {metric {!!str design.area.power_switch} title {!!str power_switch} group {!!str MSV}}} {!!map {metric {!!str design.area.isolation} title {!!str isolation} group {!!str MSV}}} {!!map {metric {!!str design.area.level_shifter} title {!!str level_shifter} group {!!str MSV}}} {!!map {metric {!!str design.area.always_on} title {!!str always_on} group {!!str MSV}}} {!!map {metric {!!str design.area} title {!!str total} group {!!str Total}}}}}}}}} hidden {!!true 1} title {!!str {Area Detail}}}}}} {!!map {physical_physical_multibit {!!map {type {!!str collapse_header} nested {!!map {physical_physical_multibit_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.multibit.*} group {!!str Multibit}}}}}}}}} hidden {!!true 1} title {!!str {Multibit Detail}}}}}} {!!map {physical_physical_vth {!!map {type {!!str collapse_header} nested {!!map {physical_per_vth_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} key {!!map {Group {!!str design.instances.vth:*}}} ar_metric {!!seq {{!!map {metric {!!str design.instances.vth:%} group {!!str Instances} title {!!str Total}}} {!!map {metric {!!str design.instances.vth:%.ratio} group {!!str Instances} title {!!str Ratio}}} {!!map {metric {!!str design.area.vth:%} group {!!str Area} title {!!str Total}}} {!!map {metric {!!str design.area.vth:%.ratio} group {!!str Area} title {!!str Ratio}}}}}}}}} hidden {!!true 1} title {!!str {Vth Detail}}}}}} {!!map {physical_physical_hinst {!!map {type {!!str collapse_header} nested {!!map {physical_per_hinst_t {!!map {type {!!str table} auto_hide {!!true 1} key {!!map {Block {!!str design.instances.hinst:*}}} ar_metric {!!seq {{!!map {metric {!!str design.instances.hinst:%} title {!!str Instances} graph_type {!!str treemap}}} {!!map {metric {!!str design.area.hinst:%} title {!!str Area} graph_type {!!str treemap}}}}} hierarchical_separator {!!str /}}}}} hidden {!!true 1} title {!!str Per-Block}}}}} {!!map {physical_check_place {!!map {type {!!str header} title {!!str {Check Place}}}}}} {!!map {physical_check_place_t {!!map {type {!!str vertical_table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str check.place.*}}}}}}}}} {!!map {physical_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {physical_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Power {!!seq {{!!map {power_power {!!map {type {!!str header} title {!!str Power}}}}} {!!map {power_power_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str power} title {!!str Total} group {!!str {Whole Design}}}} {!!map {metric {!!str {^power\..*$}} title {!!str { }} group {!!str {Whole Design}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str power.leakage} title {!!str Leakage} group {!!str {Whole Design}}}} {!!map {metric {!!str power.internal} title {!!str Internal} group {!!str {Whole Design}}}} {!!map {metric {!!str power.switching} title {!!str Switching} group {!!str {Whole Design}}}} {!!map {metric {!!str power.clock} title {!!str {Total Clock Power}}}}}}}}}} {!!map {power_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {power_leakage {!!map {type {!!str collapse_header} nested {!!map {power_leakage_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str power.leakage.type:*} group {!!str {Leakage Power Breakdown}}}}}}}}}} hidden {!!true 1} title {!!str {Leakage Details}}}}}} {!!map {power_internal {!!map {type {!!str collapse_header} nested {!!map {power_internal_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str power.internal.type:*} group {!!str {Internal Power Breakdown}}}}}}}}}} hidden {!!true 1} title {!!str {Internal Details}}}}}} {!!map {power_switching {!!map {type {!!str collapse_header} nested {!!map {power_switching_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str power.switching.type:*} group {!!str {Switching Power Breakdown}}}}}}}}}} hidden {!!true 1} title {!!str {Switching Details}}}}}} {!!map {power_per_block {!!map {type {!!str collapse_header} nested {!!map {power_per_block_t {!!map {type {!!str table} auto_hide {!!true 1} key {!!map {Block {!!str power.hinst:*}}} ar_metric {!!seq {{!!map {metric {!!str power.hinst:%} title {!!str Total} graph_type {!!str treemap}}} {!!map {metric {!!str power.switching.hinst:%} title {!!str Switching} graph_type {!!str treemap}}} {!!map {metric {!!str power.leakage.hinst:%} title {!!str Leakage} graph_type {!!str treemap}}} {!!map {metric {!!str power.internal.hinst:%} title {!!str Internal} graph_type {!!str treemap}}}}} hierarchical_separator {!!str /}}}}} hidden {!!true 1} title {!!str {Per Block}}}}}} {!!map {power_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {power_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Route {!!seq {{!!map {route_route {!!map {type {!!str header} title {!!str Routing}}}}} {!!map {route_image {!!map {type {!!str image_plot} ar_metric {!!seq {{!!map {metric {!!str design.floorplan.image} title {!!str {Design Display}}}} {!!map {metric {!!str design.route.drc.image} title {!!str {Route DRC}}}}}}}}}} {!!map {route_route_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str route.overflow.horizontal} title {!!str Hor} group {!!str Congestion}}} {!!map {metric {!!str route.overflow.vertical} title {!!str Ver} group {!!str Congestion}}} {!!map {metric {!!str design.congestion.hotspot.max} title {!!str Max} group {!!str Congestion}}} {!!map {metric {!!str design.congestion.hotspot.total} title {!!str Total} group {!!str Congestion}}} {!!map {metric {!!str route.map.*} group {!!str {Congestion Map}}}} {!!map {metric {!!str route.wirelength} title {!!str Wirelength}}} {!!map {metric {!!str route.via.singlecut} title {!!str Single} group {!!str Vias}}} {!!map {metric {!!str route.via.multicut} title {!!str Multi} group {!!str Vias}}} {!!map {metric {!!str route.via} title {!!str Total} group {!!str Vias}}} {!!map {metric {!!str route.drc.antenna} title {!!str Antenna} group {!!str {Route DRC}}}} {!!map {metric {!!str route.drc} title {!!str Total} group {!!str {Route DRC}}}} {!!map {metric {!!str route.shielding.*} group {!!str {Shielding Nets}}}} {!!map {metric {!!str check.drc.antenna} title {!!str Antenna} group {!!str {Check DRC}} link_file_metric {!!str check.antenna.report_file}}} {!!map {metric {!!str check.drc} title {!!str Total} group {!!str {Check DRC}} link_file_metric {!!str check.drc.report_file}}}}}}}}} {!!map {route_advanced {!!map {type {!!str header} title {!!str {}}}}}} {!!map {route_overflow {!!map {type {!!str collapse_header} nested {!!map {route_overflow_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str route.overflow} title {!!str Total}}} {!!map {title {!!str { }} group {!!str Layer} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str route.overflow.layer:*} group {!!str Layer}}}}}}}}} hidden {!!true 1} title {!!str {Congestion Details}}}}}} {!!map {per_layer_drc {!!map {type {!!str collapse_header} nested {!!map {per_layer_drc_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} key {!!map {Tool {!!str *.drc}}} ar_metric {!!seq {{!!map {metric {!!str %.drc} title {!!str Total}}} {!!map {title {!!str { }} group {!!str Layer} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str %.drc.layer:*} group {!!str Layer}}}}} hide_footers {!!true 1} hide_graph_footers {!!true 1}}}}} hidden {!!true 1} title {!!str {Per Layer DRC}}}}}} {!!map {per_type_drc {!!map {type {!!str collapse_header} nested {!!map {per_type_drc_t {!!map {type {!!str vertical_table} auto_hide {!!true 1} key {!!map {Tool {!!str *.drc}}} ar_metric {!!seq {{!!map {metric {!!str %.drc} title {!!str Total}}} {!!map {title {!!str { }} group {!!str Type} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str %.drc.type:*} group {!!str Type}}}}} hide_footers {!!true 1} hide_graph_footers {!!true 1}}}}} hidden {!!true 1} title {!!str {Per Type DRC}}}}}} {!!map {per_layer_type {!!map {type {!!str collapse_header} nested {!!map {per_layer_type_t {!!map {type {!!str vertical_table} key {!!map {Tool {!!str *.drc} Layer {!!str route.drc.layer:*}}} ar_metric {!!seq {{!!map {metric {!!str %.drc.layer:%.type:*} group {!!str Type}}}}} hide_footers {!!true 1} hide_graph_footers {!!true 1}}}}} hidden {!!true 1} title {!!str {Per Layer & Type DRC}}}}}} {!!map {route_via {!!map {type {!!str collapse_header} nested {!!map {route_via_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str route.via.total} title {!!str Total} group {!!str Vias}}} {!!map {metric {!!str {^.*layer:.*$}} title {!!str { }} group {!!str Vias} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str route.via.layer:*} group {!!str Vias}}} {!!map {metric {!!str route.via.singlecut} title {!!str Total} group {!!str {Single Cut Vias}}}} {!!map {metric {!!str route.via.singlecut.percentage} title {!!str Percent} group {!!str {Single Cut Vias}}}} {!!map {metric {!!str {^.*layer:.*$}} title {!!str { }} group {!!str {Single Cut Vias}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str route.via.singlecut.layer:*} group {!!str {Single Cut Vias}}}} {!!map {metric {!!str route.via.multicut} title {!!str Total} group {!!str {Multiple Cut Vias}}}} {!!map {metric {!!str route.via.multicut.percentage} title {!!str Percent} group {!!str {Multiple Cut Vias}}}} {!!map {metric {!!str {^.*layer:.*$}} title {!!str { }} group {!!str {Multiple Cut Vias}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str route.via.multicut.layer:*} group {!!str {Multiple Cut Vias}}}}}}}}}} hidden {!!true 1} title {!!str {Via Details}}}}}} {!!map {rblkg {!!map {type {!!str collapse_header} nested {!!map {rblkg_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.blockages.route.area} title {!!str Total}}} {!!map {title {!!str { }} group {!!str Layer} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str design.blockages.route.area.layer:*} group {!!str Layer}}}}}}}}} hidden {!!true 1} title {!!str {Blockage Details}}}}}} {!!map {route_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {route_cpu_t {!!map {type {!!str cpu}}}}}}}}} {!!map {Flow {!!seq {{!!map {flow_log_flow {!!map {type {!!str header} title {!!str {Log and Flow Info}}}}}} {!!map {flow_log_flow_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str flow.user} title {!!str User}}} {!!map {metric {!!str flow.log} title {!!str {Log File}} link_file_metric {!!str flow.log}}} {!!map {metric {!!str flow.run_directory} title {!!str {Run Dir}}}} {!!map {metric {!!str flow.run_tag} title {!!str {Run Tag}}}} {!!map {metric {!!str flow.step.tcl} title {!!str {Step TCL}}}}}} hide_footers {!!true 1} hide_graph_footers {!!true 1}}}}} {!!map {flow_config {!!map {type {!!str header} title {!!str {Non-Default Root Config Options}}}}}} {!!map {flow_config_t {!!map {type {!!str dict_table} metric {!!map {metric {!!str flow.root_config}}}}}}} {!!map {flow_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {flow_runtime_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str flow.cputime} title {!!str CPU} group {!!str Runtime}}} {!!map {metric {!!str flow.cputime.total} title {!!str {Total CPU}} group {!!str Runtime}}} {!!map {metric {!!str flow.realtime} title {!!str Wall} group {!!str Runtime}}} {!!map {metric {!!str flow.realtime.total} title {!!str {Total Wall}} group {!!str Runtime}}} {!!map {metric {!!str flow.memory} title {!!str Resi+Virtual} group {!!str Memory}}} {!!map {metric {!!str flow.memory.resident} title {!!str Resident} group {!!str Memory}}} {!!map {metric {!!str flow.memory.resident.peak} title {!!str {Peak Resident}} group {!!str Memory}}}}}}}}} {!!map {flow_cpu_t {!!map {type {!!str cpu}}}}}}}}}}}} excel {HUDDLE {!!seq {{!!map {Summary {!!seq {{!!map {summary_flow {!!map {type {!!str header} title {!!str {}}}}}} {!!map {summary_flow_t {!!map {type {!!str vertical_table} auto_hide {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.name} title {!!str Design}}} {!!map {metric {!!str flow.tool_list} title {!!str Tools}}} {!!map {metric {!!str flow.template.type} title {!!str Flow}}} {!!map {metric {!!str flow.template.feature_enabled} title {!!str {Enabled features}}}} {!!map {metric {!!str flow.run_tag} title {!!str Tag}}} {!!map {metric {!!str flow.machine} title {!!str {Run host}}}} {!!map {metric {!!str flow.run_directory} title {!!str {Run directory}}}} {!!map {metric {!!str flow.last_child_snapshot} title {!!str {Last step}}}}}}}}}} {!!map {summary_qor {!!map {type {!!str header} title {!!str {Stylus QOR summary}}}}}} {!!map {summary_qor_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.setup.wns} title {!!str WNS} group {!!str {Setup (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns} title {!!str TNS} group {!!str {Setup (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps} title {!!str FEPS} group {!!str {Setup (all)}}}} {!!map {metric {!!str timing.setup.wns.path_group:reg2reg} title {!!str WNS} group {!!str {Setup (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns.path_group:reg2reg} title {!!str TNS} group {!!str {Setup (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps.path_group:reg2reg} title {!!str FEPS} group {!!str {Setup (reg2reg)}}}} {!!map {metric {!!str timing.hold.wns} title {!!str WNS} group {!!str {Hold (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns} title {!!str TNS} group {!!str {Hold (all)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps} title {!!str FEPS} group {!!str {Hold (all)}}}} {!!map {metric {!!str timing.hold.wns.path_group:reg2reg} title {!!str WNS} group {!!str {Hold (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns.path_group:reg2reg} title {!!str TNS} group {!!str {Hold (reg2reg)}} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps.path_group:reg2reg} title {!!str FEPS} group {!!str {Hold (reg2reg)}}}} {!!map {metric {!!str timing.drv.max_tran.total} title {!!str Tran} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_cap.total} title {!!str Load} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_fanout.total} title {!!str Fanout} group {!!str DRV} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str clock.instances.total} title {!!str Insts} group {!!str Clock} link_table {!!str clock_phys}}} {!!map {metric {!!str clock.area.total} title {!!str Area} group {!!str Clock} link_table {!!str clock_phys}}} {!!map {metric {!!str design.density} title {!!str Density} group {!!str Design}}} {!!map {metric {!!str design.instances.logical} title {!!str Insts} group {!!str Design} link_table {!!str physical_physical}}} {!!map {metric {!!str design.area.logical} title {!!str Area} group {!!str Design} link_table {!!str physical_physical}}} {!!map {metric {!!str power.leakage} title {!!str Leakage} group {!!str Power} link_table {!!str power_power}}} {!!map {metric {!!str route.drc} title {!!str DRC} group {!!str Route} link_table {!!str route_route}}} {!!map {metric {!!str route.wirelength} title {!!str WL} group {!!str Route} link_table {!!str route_route}}} {!!map {metric {!!str messages} title {!!str Errors} group {!!str Tool}}} {!!map {metric {!!str flow.realtime} title {!!str Wall} group {!!str Tool} link_table {!!str flow_cpu}}} {!!map {metric {!!str flow.memory} title {!!str Memory} group {!!str Tool} link_table {!!str flow_cpu}}}}}}}}}}}}} {!!map {Timing {!!seq {{!!map {timing_setup {!!map {type {!!str header} title {!!str {Setup Timing}}}}}} {!!map {timing_setup_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Group {!!str timing.setup.wns.path_group:*} View {!!str timing.setup.wns.analysis_view:*}}} collapsible_key {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.setup.wns.path_group:%.analysis_view:%} title {!!str WNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.tns.path_group:%.analysis_view:%} title {!!str TNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.setup.feps.path_group:%.analysis_view:%} title {!!str FEPS}}}}}}}}} {!!map {timing_hold {!!map {type {!!str header} title {!!str {Hold Timing}}}}}} {!!map {timing_hold_t {!!map {type {!!str table} per_snapshot {!!true 1} key {!!map {Group {!!str timing.hold.wns.path_group:*} View {!!str timing.hold.wns.analysis_view:*}}} collapsible_key {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.hold.wns.path_group:%.analysis_view:%} title {!!str WNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.tns.path_group:%.analysis_view:%} title {!!str TNS} navigation {!!map {view {!!str default_timing} tab {!!str Timing}}}}} {!!map {metric {!!str timing.hold.feps.path_group:%.analysis_view:%} title {!!str FEPS}}}}}}}}} {!!map {timing_drv {!!map {type {!!str header} title {!!str {Design Rule Violations}}}}}} {!!map {timing_drv_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.drv.max_tran.total} title {!!str Total} group {!!str Tran}}} {!!map {metric {!!str timing.drv.max_tran.worst} title {!!str Worst} group {!!str Tran} link_file_metric {!!str timing.drv.report_file}}} {!!map {metric {!!str timing.drv.max_cap.total} title {!!str Total} group {!!str Cap}}} {!!map {metric {!!str timing.drv.max_cap.worst} title {!!str Worst} group {!!str Cap}}} {!!map {metric {!!str timing.drv.max_fanout.total} title {!!str Total} group {!!str Fanout}}} {!!map {metric {!!str timing.drv.max_fanout.worst} title {!!str Worst} group {!!str Fanout}}} {!!map {metric {!!str timing.si.glitches} title {!!str Glitches} group {!!str SI}}} {!!map {metric {!!str timing.si.noise} title {!!str Noise} group {!!str SI}}}}}}}}}}}}} {!!map {Clock {!!seq {{!!map {clock_phys {!!map {type {!!str header} title {!!str Physical}}}}} {!!map {clock_phys_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.instances.total} title {!!str #Total} group {!!str Instances}}} {!!map {metric {!!str {^.*\.(?!total$)[^\.]+$}} title {!!str { }} group {!!str Instances} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.instances.buffer} title {!!str #Buffers} group {!!str Instances}}} {!!map {metric {!!str clock.instances.inverter} title {!!str #Inverters} group {!!str Instances}}} {!!map {metric {!!str clock.instances.clkgate} title {!!str {#Clock Gates}} group {!!str Instances}}} {!!map {metric {!!str clock.instances.nonicg} title {!!str {#Non Integrated}} group {!!str Instances}}} {!!map {metric {!!str clock.instances.logic} title {!!str #Logic} group {!!str Instances}}} {!!map {metric {!!str clock.area.total} title {!!str Total} group {!!str Area}}} {!!map {metric {!!str {^.*\.(?!total$)[^\.]+$}} title {!!str { }} group {!!str Area} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.area.buffer} title {!!str Buffers} group {!!str Area}}} {!!map {metric {!!str clock.area.inverter} title {!!str Inverters} group {!!str Area}}} {!!map {metric {!!str clock.area.clkgate} title {!!str {Clock Gates}} group {!!str Area}}} {!!map {metric {!!str clock.area.nonicg} title {!!str {Non Integrated}} group {!!str Area}}} {!!map {metric {!!str clock.area.logic} title {!!str Logic} group {!!str Area}}} {!!map {metric {!!str clock.nets.length.total} title {!!str {Tot Clk Net Length}} group {!!str Nets}}}}}}}}} {!!map {clock_phys_cap {!!map {type {!!str header} title {!!str {}}}}}} {!!map {clock_phys_cap_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {title {!!str { }} group {!!str Wire} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.wire.top} title {!!str Top} group {!!str Wire}}} {!!map {metric {!!str clock.capacitance.wire.trunk} title {!!str Trunk} group {!!str Wire}}} {!!map {metric {!!str clock.capacitance.wire.leaf} title {!!str Leaf} group {!!str Wire}}} {!!map {title {!!str { }} group {!!str Gate} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.gate.top} title {!!str Top} group {!!str Gate}}} {!!map {metric {!!str clock.capacitance.gate.trunk} title {!!str Trunk} group {!!str Gate}}} {!!map {metric {!!str clock.capacitance.gate.leaf} title {!!str Leaf} group {!!str Gate}}} {!!map {title {!!str { }} group {!!str Total} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str clock.capacitance.total.top} title {!!str Top} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.total.trunk} title {!!str Trunk} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.total.leaf} title {!!str Leaf} group {!!str Total}}} {!!map {metric {!!str clock.capacitance.sink.*} group {!!str Sink}}}}}}}}} {!!map {clock_drv {!!map {type {!!str header} title {!!str DRV}}}}} {!!map {clock_drv_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str {clock.drv.nets.remaining transition.count}} title {!!str Count} group {!!str {Remaining Transition}}}} {!!map {metric {!!str {clock.drv.nets.remaining transition.max}} title {!!str Max} group {!!str {Remaining Transition}}}} {!!map {metric {!!str {clock.drv.nets.unfixable transition.count}} title {!!str Count} group {!!str {Unfixable Transition}}}} {!!map {metric {!!str {clock.drv.nets.unfixable transition.max}} title {!!str Max} group {!!str {Unfixable Transition}}}} {!!map {metric {!!str clock.drv.nets.capacitance.count} title {!!str Count} group {!!str Capacitance}}} {!!map {metric {!!str clock.drv.nets.capacitance.max} title {!!str Max} group {!!str Capacitance}}} {!!map {metric {!!str clock.drv.nets.resistance.count} title {!!str Count} group {!!str Resistance}}} {!!map {metric {!!str clock.drv.nets.resistance.max} title {!!str Max} group {!!str Resistance}}} {!!map {metric {!!str clock.drv.nets.length.count} title {!!str Count} group {!!str Length}}} {!!map {metric {!!str clock.drv.nets.length.max} title {!!str Max} group {!!str Length}}} {!!map {metric {!!str clock.drv.nets.fanout.count} title {!!str Count} group {!!str Fanout}}} {!!map {metric {!!str clock.drv.nets.fanout.max} title {!!str Max} group {!!str Fanout}}}}}}}}} {!!map {clock_drv_tran_tar {!!map {type {!!str header} title {!!str Transition}}}}} {!!map {clock_drv_tran_tar_t {!!map {type {!!str table} auto_hide {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.transition.target.primary_half_corner.top.*} group {!!str {Top Transition Target Stats}}}} {!!map {metric {!!str clock.transition.target.primary_half_corner.trunk.*} group {!!str {Trunk Transition Target Stats}}}} {!!map {metric {!!str clock.transition.target.primary_half_corner.leaf.*} group {!!str {Leaf Transition Target Stats}}}}}}}}}} {!!map {clock_skew {!!map {type {!!str header} title {!!str Latency/Skew}}}}} {!!map {clock_skew_t {!!map {type {!!str table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str clock.latency.primary_reporting_skew_group.primary_half_corner.*} group {!!str Latency}}} {!!map {metric {!!str clock.skew.primary_reporting_skew_group.primary_half_corner.*} group {!!str Skew}}} {!!map {metric {!!str clock.skew.primary_reporting_skew_group.primary_half_corner.skew_band.*} group {!!str {Skew Band}}}}}}}}}}}}}} {!!map {Design {!!seq {{!!map {physical_physical {!!map {type {!!str header} title {!!str Physical}}}}} {!!map {physical_physical_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str design.density} title {!!str Density}}} {!!map {metric {!!str design.instances.logical} title {!!str {Logical instances}}}} {!!map {metric {!!str design.area.logical} title {!!str {Logical area}}}} {!!map {metric {!!str design.instances} title {!!str {Total instances}}}} {!!map {metric {!!str design.area} title {!!str {Total area}}}} {!!map {metric {!!str design.blockages.place.area} title {!!str {Blocked area}}}}}}}}}} {!!map {physical_check_place {!!map {type {!!str header} title {!!str {Check Place}}}}}} {!!map {physical_check_place_t {!!map {type {!!str vertical_table} auto_hide {!!true 1} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str check.place.*}}}}}}}}}}}}} {!!map {Power {!!seq {{!!map {power_power {!!map {type {!!str header} title {!!str Power}}}}} {!!map {power_power_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str power} title {!!str Total} group {!!str {Whole Design}}}} {!!map {metric {!!str {^power\..*$}} title {!!str { }} group {!!str {Whole Design}} graph_type {!!str none} renderer {!!str histogram}}} {!!map {metric {!!str power.leakage} title {!!str Leakage} group {!!str {Whole Design}}}} {!!map {metric {!!str power.internal} title {!!str Internal} group {!!str {Whole Design}}}} {!!map {metric {!!str power.switching} title {!!str Switching} group {!!str {Whole Design}}}} {!!map {metric {!!str power.clock} title {!!str {Total Clock Power}}}}}}}}}}}}}} {!!map {Route {!!seq {{!!map {route_route {!!map {type {!!str header} title {!!str Routing}}}}} {!!map {route_route_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str route.overflow.horizontal} title {!!str Hor} group {!!str Congestion}}} {!!map {metric {!!str route.overflow.vertical} title {!!str Ver} group {!!str Congestion}}} {!!map {metric {!!str design.congestion.hotspot.max} title {!!str Max} group {!!str Congestion}}} {!!map {metric {!!str design.congestion.hotspot.total} title {!!str Total} group {!!str Congestion}}} {!!map {metric {!!str route.map.*} group {!!str {Congestion Map}}}} {!!map {metric {!!str route.wirelength} title {!!str Wirelength}}} {!!map {metric {!!str route.via.singlecut} title {!!str Single} group {!!str Vias}}} {!!map {metric {!!str route.via.multicut} title {!!str Multi} group {!!str Vias}}} {!!map {metric {!!str route.via} title {!!str Total} group {!!str Vias}}} {!!map {metric {!!str route.drc.antenna} title {!!str Antenna} group {!!str {Route DRC}}}} {!!map {metric {!!str route.drc} title {!!str Total} group {!!str {Route DRC}}}} {!!map {metric {!!str route.shielding.*} group {!!str {Shielding Nets}}}} {!!map {metric {!!str check.drc.antenna} title {!!str Antenna} group {!!str {Check DRC}} link_file_metric {!!str check.antenna.report_file}}} {!!map {metric {!!str check.drc} title {!!str Total} group {!!str {Check DRC}} link_file_metric {!!str check.drc.report_file}}}}}}}}}}}}} {!!map {Flow {!!seq {{!!map {flow_log_flow {!!map {type {!!str header} title {!!str {Log and Flow Info}}}}}} {!!map {flow_log_flow_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str flow.user} title {!!str User}}} {!!map {metric {!!str flow.log} title {!!str {Log File}} link_file_metric {!!str flow.log}}} {!!map {metric {!!str flow.run_directory} title {!!str {Run Dir}}}} {!!map {metric {!!str flow.run_tag} title {!!str {Run Tag}}}} {!!map {metric {!!str flow.step.tcl} title {!!str {Step TCL}}}}}} hide_footers {!!true 1} hide_graph_footers {!!true 1}}}}} {!!map {flow_cpu {!!map {type {!!str header} title {!!str Runtime}}}}} {!!map {flow_runtime_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str flow.cputime} title {!!str CPU} group {!!str Runtime}}} {!!map {metric {!!str flow.cputime.total} title {!!str {Total CPU}} group {!!str Runtime}}} {!!map {metric {!!str flow.realtime} title {!!str Wall} group {!!str Runtime}}} {!!map {metric {!!str flow.realtime.total} title {!!str {Total Wall}} group {!!str Runtime}}} {!!map {metric {!!str flow.memory} title {!!str Resi+Virtual} group {!!str Memory}}} {!!map {metric {!!str flow.memory.resident} title {!!str Resident} group {!!str Memory}}} {!!map {metric {!!str flow.memory.resident.peak} title {!!str {Peak Resident}} group {!!str Memory}}}}}}}}}}}}}}}} text {HUDDLE {!!seq {{!!map {{} {!!seq {{!!map {summary_qor_t {!!map {type {!!str table} per_snapshot {!!true 1} ar_metric {!!seq {{!!map {metric {!!str timing.setup.wns} title {!!str WNS}}} {!!map {metric {!!str timing.setup.tns} title {!!str TNS}}} {!!map {metric {!!str timing.setup.feps} title {!!str FEPS}}} {!!map {metric {!!str timing.setup.wns.path_group:reg2reg} title {!!str WNS_R2R}}} {!!map {metric {!!str timing.setup.tns.path_group:reg2reg} title {!!str TNS_R2R}}} {!!map {metric {!!str timing.setup.feps.path_group:reg2reg} title {!!str FEPS_R2R}}} {!!map {metric {!!str timing.drv.max_tran.total} title {!!str Tran} group {!!str DRV(T)}}} {!!map {metric {!!str timing.drv.max_cap.total} title {!!str Load} group {!!str DRV(C)}}} {!!map {metric {!!str power.leakage} title {!!str Leakage} group {!!str POWER(L)}}} {!!map {metric {!!str design.density} title {!!str Density} group {!!str UTIL}}} {!!map {metric {!!str design.instances.logical} title {!!str INSTS}}} {!!map {metric {!!str design.area.logical} title {!!str AREA}}} {!!map {metric {!!str route.drc} title {!!str DRC}}} {!!map {metric {!!str flow.cputime} title {!!str CPU}}}}}}}}}}}}}}}}}
+<CMD> set pegDefaultResScaleFactor 1
+<CMD> set pegDetailResScaleFactor 1
+<CMD> set pegEnableDualViewForTQuantus 1
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set spgUnflattenIlmInCheckPlace 2
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+<CMD> set timing_enable_default_delay_arc 1
+<CMD> init_design
+#% Begin Load MMMC data ... (date=05/25 01:02:34, mem=526.8M)
+#% End Load MMMC data ... (date=05/25 01:02:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=527.0M, current mem=527.0M)
+_default_rc_corner_
+
+Loading LEF file gsclib045_tech.lef ...
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+
+Loading LEF file gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file giolib045.lef ...
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'AY' in macro 'PADANALOG' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Wed May 25 01:02:35 2022
+viaInitial ends at Wed May 25 01:02:35 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from genus_invs_des/genus.mmode.tcl
+Reading default_library_set timing library '/local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Read 489 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=12.4M, fe_cpu=0.20min, fe_real=0.52min, fe_mem=772.7M) ***
+#% Begin Load netlist data ... (date=05/25 01:02:35, mem=543.9M)
+*** Begin netlist parsing (mem=772.7M) ***
+Created 489 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'genus_invs_des/genus.v'
+
+*** Memory Usage v#1 (Current mem = 772.703M, initial mem = 256.684M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=772.7M) ***
+#% End Load netlist data ... (date=05/25 01:02:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=551.4M, current mem=551.4M)
+Set top cell to top.
+Hooked 489 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell top ...
+*** Netlist is unique.
+** info: there are 602 modules.
+** info: there are 18 stdCell insts.
+** info: there are 23 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 817.129M, initial mem = 256.684M) ***
+Reading IO assignment file "top.save.io" ...
+Adjusting Core to Bottom to: 0.1600.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Pre-connect netlist-defined P/G connections...
+  Updated 23 instances.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M10 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M11 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: _default_view_
+    RC-Corner Name        : _default_rc_corner_
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'genus_invs_des/genus._default_constraint_mode_.sdc' ...
+Current (total cpu=0:00:12.3, real=0:00:32.0, peak res=713.7M, current mem=713.7M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 10).
+
+**WARN: (TCLCMD-1041):	current_design should use the top cell as a argument (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 13).
+
+top
+INFO (CTE): Reading of timing constraints file genus_invs_des/genus._default_constraint_mode_.sdc completed, with 3 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=714.6M, current mem=714.6M)
+Current (total cpu=0:00:12.3, real=0:00:32.0, peak res=714.6M, current mem=714.6M)
+Total number of combinational cells: 327
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% Begin Load MMMC data ... (date=05/25 01:02:36, mem=736.6M)
+#% End Load MMMC data ... (date=05/25 01:02:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=736.6M, current mem=736.6M)
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADVSSIOR; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADVDDIOR; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADVDD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDO; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PADDI; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766         11  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773         11  The via resistance between layers %s and...
+WARNING   IMPSYC-2             5  Timing information is not defined for ce...
+WARNING   TCLCMD-1041          1  current_design should use the top cell a...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+*** Message Summary: 97 warning(s), 0 error(s)
+
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> zoomBox -90.44350 35.29850 879.96900 932.89850
+<CMD> zoomBox -14.55550 105.72550 810.29500 868.68550
+<CMD> pan 75.88800 196.16900
+<CMD> pan -39.48200 104.27500
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.000693 0.0 0.16 0.0 1.04
+Adjusting Core to Bottom to: 0.3500.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.25483955813 0.000549 0.0 0.35 0.0 30
+Adjusting Core to Bottom to: 0.5400.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.24640797063 0.000549 0.0 30 0.0 30.02
+Adjusting Core to Bottom to: 30.1800.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.23738244514 0.000549 30 30.18 0.0 30.02
+Adjusting Core to Bottom to: 30.3700.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.22842269651 0.000549 30.0 30.37 30 30.02
+Adjusting Core to Bottom to: 30.5600.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.2195280083 0.7 30.0 30.56 30.0 30.02
+Adjusting Core to Bottom to: 30.7500.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.00099 30.0 30.75 30.0 30.3
+Adjusting Core to Bottom to: 30.9400.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.000751 30.0 30.94 30.0 31.82
+Adjusting Core to Bottom to: 31.1300.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1 0.000655 30.0 31.13 30.0 33.34
+Adjusting Core to Bottom to: 31.3200.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 1.05674157303 0.000614 30.0 31.32 30.0 34.86
+Adjusting Core to Bottom to: 31.5100.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> addIoFiller -cell padIORINGFEED10 -prefix FILLER -side n
+Added 12 of filler cell 'padIORINGFEED10' on top side.
+<CMD> zoomBox -35.96300 84.72700 934.74300 982.59850
+<CMD> zoomBox 28.45750 193.41300 853.55800 956.60450
+<CMD> zoomBox 129.75850 364.32250 725.89400 915.72850
+<CMD> zoomBox 170.01500 429.91300 676.73000 898.60800
+<CMD> addIoFiller -cell padIORINGFEED15 -prefix FILLER -side n
+**ERROR: (IMPFP-3352):	Cell padIORINGFEED15 not found.
+
+Usage: addIoFiller [-help] -cell {name list} [-fillAnyGap]
+                   [-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>]
+                   [-from <coord>] [-prefix <string>]
+                   [-side <top|bottom|left|right>] [-to <coord>]
+                   [-useSmallIoHeight] [-row <num> ] [-logic [ -deriveConnectivity ]]
+
+-help                             # Prints out the command usage
+-cell {name list}                 # name list of IO filler cell
+                                  # (list, required)
+-deriveConnectivity               # derive connectivity for io Filler
+                                  # (bool, optional)
+-fillAnyGap                       # fill smaller gap by overlapping filler cell
+                                  # (bool, optional)
+-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>
+                                  # orientation of new filler instances (string, optional)
+-from <coord>                     # staring offset from edge for adding fillers
+                                  # (float, optional)
+-logic                            # this option will omit physical only
+                                  # attribute of IO filler instances which
+                                  # newly added. (bool, optional)
+-prefix <string>                  # prefix for new filler instances
+                                  # (string, optional)
+-row <num>                        # row number in multiple io row design
+                                  # (int, optional, min=0, max=1)
+-side <top|bottom|left|right>     # which side of io (string, optional)
+-to <coord>                       # ending offset from edge for adding fillers
+                                  # (float, optional)
+-useSmallIoHeight                 # match site before adding filler
+                                  # (bool, optional)
+
+
+**ERROR: (IMPSYC-194):	Incorrect usage for command 'addIoFiller'.
+
+**ERROR: (IMPSYT-6578):	<CMD> addIoFiller -cell padIORINGFEED5 -prefix FILLER -side n
+Added 6 of filler cell 'padIORINGFEED5' on top side.
+<CMD> zoomBox 207.77250 483.50150 638.48050 881.89250
+<CMD> zoomBox 240.20100 528.63350 606.30300 867.26600
+<CMD> zoomBox 291.58850 598.68400 556.09750 843.34650
+<CMD> zoomBox 328.71600 649.29550 519.82450 826.06450
+<CMD> zoomBox 359.31400 675.06450 497.39050 802.78100
+<CMD> zoomBox 370.78150 684.87050 488.14700 793.43000
+<CMD> zoomBox 380.14150 693.11500 479.90250 785.39050
+<CMD> zoomBox 387.94300 700.10300 472.74000 778.53750
+<CMD> zoomBox 380.39300 692.76600 480.15450 785.04200
+<CMD> zoomBox 361.06150 673.97950 499.13950 801.69700
+<CMD> zoomBox 297.27150 611.98850 561.78500 856.65500
+<CMD> zoomBox 246.01350 562.17650 612.12250 900.81550
+<CMD> addIoFiller -cell padIORINGFEED1 -prefix FILLER -side n
+Added 0 of filler cell 'padIORINGFEED1' on top side.
+<CMD> zoomBox 295.16800 618.95400 559.68200 863.62100
+<CMD> zoomBox 314.36500 641.12800 539.20200 849.09500
+<CMD> zoomBox 344.55200 675.99650 506.99700 826.25300
+<CMD> zoomBox 356.34100 689.61400 494.41950 817.33200
+<CMD> zoomBox 366.76350 701.10850 484.13050 809.66900
+<CMD> zoomBox 383.88100 718.69500 468.67900 797.13050
+<CMD> zoomBox 396.60250 731.22250 457.86950 787.89250
+<CMD> zoomBox 401.86900 736.04950 453.94600 784.21900
+<CMD> zoomBox 406.80050 740.06150 451.06600 781.00550
+<CMD> zoomBox 418.00000 748.93900 445.18550 774.08450
+<CMD> zoomBox 422.99600 752.88150 442.63800 771.04950
+<CMD> zoomBox 426.60600 755.73000 440.79750 768.85650
+<CMD> zoomBox 428.01600 756.84200 440.07900 768.00000
+<CMD> zoomBox 423.40750 752.74000 443.05050 770.90900
+<CMD> zoomBox 412.97650 742.49450 450.60650 777.30100
+<CMD> zoomBox 399.53100 728.69400 460.80550 785.37100
+<CMD> zoomBox 393.38950 722.37100 465.47750 789.05000
+<CMD> zoomBox 325.77800 652.75750 516.91700 829.55500
+<CMD> zoomBox 284.08500 609.83000 548.63750 854.53250
+<CMD> zoomBox 257.57100 582.53100 568.80950 870.41650
+<CMD> zoomBox 146.50800 468.17900 653.30850 936.95300
+<CMD> zoomBox -34.33900 281.97600 790.90100 1045.29650
+<CMD> zoomBox -214.34700 96.63750 927.85450 1153.13700
+<CMD> zoomBox -328.81950 -21.22450 1014.94700 1221.71600
+<CMD> pan 86.91900 262.39700
+<CMD> addIoFiller -cell padIORINGFEED10 -prefix FILLER -side e
+Added 18 of filler cell 'padIORINGFEED10' on right side.
+<CMD> zoomBox -90.66150 33.96900 1051.54000 1090.46850
+<CMD> zoomBox 37.89100 119.30150 1008.76300 1017.32650
+<CMD> zoomBox 147.16100 191.83400 972.40250 955.15550
+<CMD> zoomBox 318.98850 305.89150 915.22550 857.39150
+<CMD> zoomBox 386.09400 350.43550 892.89550 819.21050
+<CMD> zoomBox 437.92150 389.87150 868.70300 788.33050
+<CMD> zoomBox 519.41950 451.88450 830.65950 739.77150
+<CMD> zoomBox 578.30200 496.68900 803.17300 704.68750
+<CMD> zoomBox 551.24750 476.10250 815.80200 720.80700
+<CMD> zoomBox 437.91850 389.86950 868.70300 788.33100
+<CMD> zoomBox 325.11600 304.03700 921.35800 855.54150
+<CMD> zoomBox 69.70250 109.69000 1040.58300 1007.72300
+<CMD> addIoFiller -cell padIORINGFEED10 -prefix FILLER -side s
+Added 12 of filler cell 'padIORINGFEED10' on bottom side.
+<CMD> zoomBox 135.07650 129.09500 960.32500 892.42300
+<CMD> zoomBox 190.48450 144.62800 891.94600 793.45700
+<CMD> pan -81.67100 -162.91800
+<CMD> addIoFiller -cell padIORINGFEED5 -prefix FILLER -side s
+Added 6 of filler cell 'padIORINGFEED5' on bottom side.
+<CMD> pan -28.13100 -211.92050
+<CMD> zoomBox 244.39450 -4.95950 675.18000 393.50300
+<CMD> zoomBox 282.93100 17.44300 649.09900 356.13650
+<CMD> zoomBox 315.68700 36.48550 626.93000 324.37500
+<CMD> zoomBox 339.48300 66.32100 604.04000 311.02750
+<CMD> zoomBox 428.10300 159.41700 545.48950 267.99550
+<CMD> zoomBox 460.97700 185.14100 533.06700 251.82200
+<CMD> addIoFiller -cell padIORINGFEED1 -prefix FILLER -side s
+Added 0 of filler cell 'padIORINGFEED1' on bottom side.
+<CMD> zoomBox 448.96300 178.72250 533.77450 257.17050
+<CMD> zoomBox 460.48300 185.14100 532.57300 251.82200
+<CMD> zoomBox 470.27550 190.59650 531.55200 247.27550
+<CMD> zoomBox 485.54850 199.19750 529.82150 240.14850
+<CMD> zoomBox 491.47650 202.55650 529.10850 237.36500
+<CMD> zoomBox 479.32550 194.85250 531.41150 243.03050
+<CMD> zoomBox 452.25900 177.40900 537.07300 255.85900
+<CMD> zoomBox 425.33000 160.04600 542.72000 268.62800
+<CMD> zoomBox 408.20500 149.00450 546.31100 276.74800
+<CMD> addIoFiller -cell padIORINGFEED1 -prefix FILLER -side s
+Added 0 of filler cell 'padIORINGFEED1' on bottom side.
+<CMD> zoomBox 373.07100 115.17450 564.22100 291.98200
+<CMD> zoomBox 324.44250 68.35050 589.01000 313.06700
+<CMD> zoomBox 293.51800 38.57400 604.77400 326.47550
+<CMD> zoomBox 214.33450 -37.67100 645.13900 360.80900
+<CMD> zoomBox 163.97950 -86.15750 670.80800 382.64250
+<CMD> zoomBox 105.31700 -143.43150 701.58550 408.09750
+<CMD> zoomBox -140.41450 -383.34700 830.50950 514.72650
+<CMD> zoomBox -252.79400 -493.06650 889.46950 563.49050
+<CMD> pan 124.12700 194.17200
+<CMD> clearGlobalNets
+net ignore based on current view = 0
+Pre-connect netlist-defined P/G connections...
+  Updated 23 instances.
+<CMD> globalNetConnect vssc -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect vddc -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect vddo -type pgpin -pin VDDIOR -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect vsso -type pgpin -pin VSSIOR -instanceBasename * -hierarchicalInstance {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vddc vssc} -type core_rings -follow core -layer {top Metal3 bottom Metal3 left Metal2 right Metal2} -width {top 8 bottom 8 left 8 right 8} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1015.8M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal2 |        4       |       NA       |
+|  Via2  |        8       |        0       |
+| Metal3 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vddc vssc} -type core_rings -follow core -layer {top Metal3 bottom Metal3 left Metal2 right Metal2} -width {top 8 bottom 8 left 8 right 8} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1015.8M)
+Ring generation is complete.
+<CMD> zoomBox -85.00100 -3.20800 885.92300 894.86550
+<CMD> zoomBox -38.65300 38.61850 786.63250 801.98100
+<CMD> zoomBox 3.78550 72.88950 705.27850 721.74800
+<CMD> zoomBox 96.66150 149.42100 527.46650 547.90150
+<CMD> pan 111.43500 165.92150
+<CMD> zoomBox 115.22050 169.70700 481.40450 508.41550
+<CMD> zoomBox 137.24850 181.21850 448.50500 469.12050
+<CMD> zoomBox 155.97200 191.00300 420.54000 435.72000
+<CMD> zoomBox 170.91150 204.14600 395.79450 412.15550
+<CMD> zoomBox 183.61050 215.31750 374.76100 392.12550
+<CMD> zoomBox 194.25600 226.40800 356.73400 376.69500
+<CMD> zoomBox 203.30450 235.83500 341.41100 363.57900
+<CMD> zoomBox 210.99600 243.82100 328.38650 352.40350
+<CMD> pan -5.92300 23.86500
+<CMD> zoomBox 205.07300 215.69950 343.17950 343.44350
+<CMD> zoomBox 196.24500 201.51150 358.72300 351.79850
+<CMD> zoomBox 185.85900 184.85700 377.00950 361.66500
+<CMD> zoomBox 173.64000 165.26350 398.52300 373.27300
+<CMD> zoomBox 142.35250 115.09250 453.61000 402.99550
+<CMD> zoomBox 122.45600 83.18750 488.64150 421.89700
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal11(11) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal11(11) } -nets { vddc vssc } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal11(11) }
+*** Begin SPECIAL ROUTE on Wed May 25 01:11:01 2022 ***
+SPECIAL ROUTE ran on directory: /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn
+SPECIAL ROUTE ran on machine: srv-eda-04 (Linux 3.10.0-1160.53.1.el7.x86_64 Xeon 3.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "vddc vssc"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1982.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 24 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 591 macros, 11 used
+Read in 84 components
+  3 core components: 3 unplaced, 0 placed, 0 fixed
+  77 pad components: 0 unplaced, 54 placed, 23 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 17 logical pins
+Read in 17 nets
+Read in 4 special nets, 2 routed
+Read in 222 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vddc. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vssc. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vssc. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vssc. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0  open: 54
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 486
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Pad Ring connections: 149
+  Number of Followpin connections: 243
+End power routing: cpu: 0:00:28, real: 0:00:28, peak: 2574.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 878 wires.
+ViaGen created 486 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       729      |       NA       |
+|  Via1  |       486      |        0       |
+| Metal2 |        8       |       NA       |
+| Metal3 |        8       |       NA       |
+| Metal4 |       133      |       NA       |
++--------+----------------+----------------+
+<CMD> pan 117.48250 18.99900
+<CMD> zoomBox 210.01050 103.75250 640.81700 502.23450
+<CMD> zoomBox 174.70300 59.39650 681.53400 528.19900
+<CMD> zoomBox 133.16400 7.21300 729.43600 558.74550
+<CMD> zoomBox 169.21200 45.73100 600.01900 444.21350
+<CMD> zoomBox 193.64750 72.02200 504.90600 359.92600
+<CMD> zoomBox 203.19050 82.29000 467.76050 327.00850
+<CMD> zoomBox 211.30200 91.01750 436.18650 299.02850
+<CMD> zoomBox 223.89600 108.37450 386.37500 258.66250
+<CMD> zoomBox 228.81400 115.15300 366.92150 242.89800
+<CMD> pan -8.93300 -60.06150
+<CMD> zoomBox 210.51700 156.07750 372.99650 306.36600
+<CMD> zoomBox 186.53900 123.62300 411.42450 331.63500
+<CMD> zoomBox 153.35150 78.70300 464.61250 366.60950
+<CMD> zoomBox 107.41800 16.53100 538.22950 415.01750
+<CMD> zoomBox 77.42100 -23.00650 584.25800 445.80150
+<CMD> zoomBox 0.61100 -124.24400 702.11600 524.62550
+<CMD> zoomBox -105.70000 -264.36500 865.24150 633.72450
+<CMD> zoomBox -252.84350 -458.30400 1091.02100 784.72700
+<CMD> pan 50.41650 95.30100
+<CMD> zoomBox -99.42050 -14.11600 1042.86450 1042.46050
+<CMD> zoomBox -11.86500 107.79650 959.07700 1005.88650
+<CMD> zoomBox 169.35250 373.78150 765.63250 925.32100
+<CMD> zoomBox 212.16450 437.18900 719.00250 905.99800
+<CMD> zoomBox 243.63650 492.26600 674.44900 890.75350
+<CMD> zoomBox 270.38800 539.08100 636.57850 877.79550
+<CMD> zoomBox 328.88300 641.44850 553.77050 849.46200
+<CMD> zoomBox 342.84750 665.88650 534.00200 842.69800
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {vddc vssc} -layer Metal4 -direction vertical -width 8 -spacing 4 -set_to_set_distance 50 -start_from left -start_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal11 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid Grid
+
+Initialize fgc environment(mem: 1317.9M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1317.9M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1317.9M)
+**WARN: (IMPPP-149):	Half grid on layer Metal11 is not on manufacturing grid, so generated wires on layer Metal11 will be snapped to full grid.
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1317.9M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1317.9M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 15 wires.
+ViaGen created 5499 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via1  |      1823      |        0       |
+|  Via2  |      1823      |        0       |
+|  Via3  |      1853      |        0       |
+| Metal4 |       15       |       NA       |
++--------+----------------+----------------+
+<CMD> zoomBox 328.83900 656.85300 553.72700 864.86700
+<CMD> zoomBox 292.74600 633.72250 604.01000 921.63150
+<CMD> zoomBox 269.79350 619.01300 635.98650 957.72950
+<CMD> zoomBox 242.79100 601.70800 673.60600 1000.19800
+<CMD> zoomBox 211.02300 581.34900 717.86450 1050.16100
+<CMD> zoomBox 173.64900 557.39700 769.93350 1108.94100
+<CMD> pan -33.94150 75.19200
+<CMD> zoomBox 79.97050 85.36750 905.27850 848.75050
+<CMD> pan -56.58650 -126.99350
+<CMD> zoomBox 55.61450 36.26350 651.89900 587.80750
+<CMD> zoomBox 68.68950 66.00050 575.53150 534.81300
+<CMD> zoomBox 79.80350 91.27700 510.61900 489.76750
+<CMD> zoomBox 89.25000 112.76200 455.44350 451.47900
+<CMD> zoomBox 100.83250 131.73500 412.09700 419.64450
+<CMD> zoomBox 119.04650 161.57000 343.93500 369.58450
+<CMD> zoomBox 126.15950 173.17800 317.31500 349.99050
+<CMD> zoomBox 141.71350 198.56050 259.10700 307.14550
+<CMD> zoomBox 116.22350 181.81950 278.70600 332.11050
+<CMD> zoomBox 80.94300 158.64850 305.83250 366.66400
+<CMD> zoomBox 58.50650 143.91350 323.08300 388.63800
+<CMD> zoomBox -35.47600 81.97550 395.34300 480.46900
+<CMD> zoomBox -131.80450 11.54900 464.48500 563.09750
+<CMD> zoomBox -192.92650 -33.37350 508.59050 615.50700
+<CMD> zoomBox -262.75300 -87.18450 562.56150 676.20450
+<CMD> pan 243.43050 360.27650
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+-place_design_floorplan_mode false         # bool, default=false, user setting
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#2 (mem=1107.5M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.6 mem=1115.5M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.7 mem=1119.5M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 29 (59.2%) nets
+3		: 8 (16.3%) nets
+4     -	14	: 12 (24.5%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=18 (0 fixed + 18 movable) #buf cell=0 #inv cell=0 #block=0 (0 floating + 0 preplaced)
+#ioInst=81 #net=49 #term=132 #term/net=2.69, #fixedIo=81, #floatIo=0, #fixedPin=17, #floatPin=0
+stdCell: 18 single + 0 double + 0 multi
+Total standard cell length = 0.0582 (mm), area = 0.0001 (mm^2)
+Estimated cell power/ground rail width = 0.160 um
+Average module density = 0.001.
+Density for the design = 0.001.
+       = stdcell_area 291 sites (100 um^2) / alloc_area 474078 sites (162135 um^2).
+Pin Density = 0.0002784.
+            = total # of pins 132 / total area 474078.
+=== lastAutoLevel = 9 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 6.816e+03 (3.52e+03 3.29e+03)
+              Est.  stn bbox = 7.048e+03 (3.63e+03 3.41e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Iteration  2: Total net bbox = 6.816e+03 (3.52e+03 3.29e+03)
+              Est.  stn bbox = 7.048e+03 (3.63e+03 3.41e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Iteration  3: Total net bbox = 5.672e+03 (2.84e+03 2.84e+03)
+              Est.  stn bbox = 5.879e+03 (2.92e+03 2.96e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Active setup views:
+    _default_view_
+Iteration  4: Total net bbox = 5.551e+03 (2.77e+03 2.78e+03)
+              Est.  stn bbox = 5.758e+03 (2.85e+03 2.91e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Iteration  5: Total net bbox = 5.238e+03 (2.64e+03 2.60e+03)
+              Est.  stn bbox = 5.449e+03 (2.72e+03 2.73e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Iteration  6: Total net bbox = 5.065e+03 (2.56e+03 2.50e+03)
+              Est.  stn bbox = 5.281e+03 (2.65e+03 2.63e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1160.7M
+Iteration  7: Total net bbox = 5.270e+03 (2.77e+03 2.50e+03)
+              Est.  stn bbox = 5.486e+03 (2.86e+03 2.63e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1160.7M
+Iteration  8: Total net bbox = 5.270e+03 (2.77e+03 2.50e+03)
+              Est.  stn bbox = 5.486e+03 (2.86e+03 2.63e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1178.9M
+Iteration  9: Total net bbox = 5.185e+03 (2.73e+03 2.45e+03)
+              Est.  stn bbox = 5.404e+03 (2.83e+03 2.58e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1182.9M
+Iteration 10: Total net bbox = 5.185e+03 (2.73e+03 2.45e+03)
+              Est.  stn bbox = 5.404e+03 (2.83e+03 2.58e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1182.9M
+Iteration 11: Total net bbox = 5.050e+03 (2.55e+03 2.50e+03)
+              Est.  stn bbox = 5.271e+03 (2.64e+03 2.63e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1183.9M
+Iteration 12: Total net bbox = 5.256e+03 (2.75e+03 2.50e+03)
+              Est.  stn bbox = 5.477e+03 (2.85e+03 2.63e+03)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 1183.9M
+Iteration 13: Total net bbox = 5.256e+03 (2.75e+03 2.50e+03)
+              Est.  stn bbox = 5.477e+03 (2.85e+03 2.63e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1183.9M
+Iteration 14: Total net bbox = 5.256e+03 (2.75e+03 2.50e+03)
+              Est.  stn bbox = 5.477e+03 (2.85e+03 2.63e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1183.9M
+*** cost = 5.256e+03 (2.75e+03 2.50e+03) (cpu for global=0:00:00.8) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/5
+Solver runtime cpu: 0:00:00.2 real: 0:00:00.1
+Core Placement runtime cpu: 0:00:00.4 real: 0:00:01.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:01:15 mem=1183.9M) ***
+Total net bbox length = 5.085e+03 (2.582e+03 2.503e+03) (ext = 4.606e+03)
+Move report: Detail placement moves 18 insts, mean move: 3.17 um, max move: 13.71 um
+	Max move on inst (dd0/dd0_dd0_dd2_q_reg): (375.92, 391.09) --> (381.20, 382.66)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1183.9MB
+Summary Report:
+Instances move: 18 (out of 18 movable)
+Instances flipped: 0
+Mean displacement: 3.17 um
+Max displacement: 13.71 um (Instance: dd0/dd0_dd0_dd2_q_reg) (375.916, 391.086) -> (381.2, 382.66)
+	Length: 16 sites, height: 1 rows, site name: CoreSite, cell type: TLATX1
+Total net bbox length = 5.082e+03 (2.579e+03 2.503e+03) (ext = 4.620e+03)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1183.9MB
+*** Finished refinePlace (0:01:15 mem=1183.9M) ***
+*** End of Placement (cpu=0:00:01.9, real=0:00:02.0, mem=1182.0M) ***
+default core: bins with density > 0.750 =  0.00 % ( 0 / 575 )
+Density distribution unevenness ratio = 99.274%
+*** Free Virtual Timing Model ...(mem=1182.0M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+
+Starting congestion repair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has no routable track
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Metal10 has single uniform track structure
+[NR-eGR] Metal11 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1167.84 MB )
+[NR-eGR] Read 9849 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1167.84 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 1248
+[NR-eGR] #PG Blockages       : 9849
+[NR-eGR] #Bump Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=49  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 32 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 32 net(s) in layer range [2, 11]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.082120e+03um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (0)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2  (2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3  (3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4  (4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7  (7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8  (8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9  (9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] Metal10 (10)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] Metal11 (11)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.27 seconds, mem = 1200.4M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+
+=== incrementalPlace Internal Loop 1 ===
+Skipped repairing congestion.
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Metal1  (1F) length: 0.000000e+00um, number of vias: 81
+[NR-eGR] Metal2  (2V) length: 1.865165e+03um, number of vias: 135
+[NR-eGR] Metal3  (3H) length: 2.457330e+03um, number of vias: 20
+[NR-eGR] Metal4  (4V) length: 6.458100e+02um, number of vias: 2
+[NR-eGR] Metal5  (5H) length: 1.301700e+02um, number of vias: 0
+[NR-eGR] Metal6  (6V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal7  (7H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal8  (8V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal9  (9H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal10 (10V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal11 (11H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 5.098475e+03um, number of vias: 238
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.12 seconds, mem = 1200.4M
+End of congRepair (cpu=0:00:00.4, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 3, real = 0: 0: 4, mem = 1182.4M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 3 warning(s), 0 error(s)
+
+<CMD> zoomBox 49.06200 153.89650 750.57950 802.77750
+<CMD> zoomBox 106.50850 201.67750 702.79850 753.22650
+<CMD> zoomBox 155.56900 238.24150 662.41600 707.05850
+<CMD> zoomBox 194.22200 267.74750 625.04200 666.24200
+<CMD> zoomBox 222.14450 291.32250 588.34150 630.04300
+<CMD> zoomBox 245.23900 304.39750 556.50650 592.31000
+<CMD> zoomBox 281.50400 324.68300 506.39500 532.70000
+<CMD> zoomBox 295.64300 332.58200 486.80050 509.39650
+<CMD> zoomBox 307.66150 339.29600 470.14550 489.58850
+<CMD> zoomBox 326.85200 352.96900 444.24700 461.55550
+<CMD> zoomBox 340.71700 362.53500 425.53500 440.98900
+<CMD> zoomBox 350.76450 369.26400 412.04600 425.94750
+<CMD> zoomBox 354.68850 371.89200 406.77800 420.07300
+<CMD> zoomBox 358.02400 374.12550 402.30000 415.07950
+<CMD> zoomBox 360.85950 376.02450 398.49400 410.83500
+<CMD> zoomBox 363.26950 377.63800 395.25900 407.22750
+<CMD> zoomBox 365.31750 379.00950 392.50900 404.16100
+<CMD> zoomBox 366.45650 380.62400 389.57000 402.00300
+<CMD> zoomBox 367.42100 381.99150 387.06750 400.16400
+<CMD> zoomBox 368.24050 383.15450 384.94000 398.60100
+<CMD> zoomBox 369.52900 384.97650 381.59500 396.13700
+<CMD> zoomBox 368.92050 384.14450 383.11550 397.27450
+<CMD> zoomBox 367.28250 381.82000 386.92950 399.99300
+<CMD> zoomBox 364.97800 378.49100 392.17150 403.64400
+<CMD> zoomBox 363.51250 376.37400 395.50500 405.96600
+<CMD> zoomBox 357.37550 367.50600 409.46950 415.69150
+<CMD> zoomBox 354.52100 363.45050 415.80850 420.13950
+<CMD> zoomBox 342.46450 346.46250 442.26150 438.77150
+<CMD> zoomBox 330.46450 329.55350 468.59200 457.31700
+<CMD> zoomBox 313.85550 306.14950 505.03550 482.98500
+<CMD> zoomBox 303.29300 291.26650 528.21100 499.30850
+<CMD> zoomBox 276.24750 253.15750 587.55350 541.10550
+<CMD> zoomBox 187.00450 127.40650 783.37000 679.02550
+<CMD> zoomBox 115.29550 26.36200 940.71500 789.84850
+<CMD> zoomBox 69.69350 -37.89550 1040.77550 860.32400
+<CMD> zoomBox 15.82250 -114.15750 1158.27200 942.57150
+<CMD> pan -45.81600 -91.55350
+<CMD> panCenter 355.74950 460.76200
+<CMD> zoomBox -55.59100 52.56500 769.82900 816.05200
+<CMD> zoomBox 7.19650 99.49550 708.80350 748.45950
+<CMD> zoomBox 106.18100 173.29400 613.09250 642.17050
+<CMD> zoomBox 182.42950 230.07050 548.67300 568.83400
+<CMD> zoomBox 212.20750 252.24400 523.51450 540.19300
+<CMD> zoomBox 237.33750 271.45400 501.94850 516.21050
+<CMD> zoomBox 258.69800 288.09000 483.61750 496.13350
+<CMD> zoomBox 276.50500 303.58400 467.68700 480.42100
+<CMD> zoomBox 291.64150 316.71700 454.14600 467.02850
+<CMD> zoomBox 276.54200 303.69550 467.72400 480.53250
+<CMD> zoomBox 213.29350 249.14950 524.60100 537.09900
+<CMD> zoomBox 150.33800 194.85650 581.21400 593.40300
+<CMD> zoomBox 7.79050 71.92250 709.40150 720.89000
+<CMD> zoomBox -228.72550 -146.34400 913.73050 910.39100
+<CMD> zoomBox -336.96400 -246.23600 1007.10200 996.98150
+<CMD> zoomBox -136.72350 -65.29600 834.36450 832.92900
+<CMD> zoomBox 62.08050 109.35100 658.45000 660.97350
+<CMD> zoomBox 109.18050 150.54900 616.09450 619.42800
+<CMD> zoomBox 149.21550 185.46850 580.09250 584.01600
+<CMD> zoomBox 236.75700 261.82550 501.36950 506.58350
+<CMD> zoomBox 275.41850 295.54800 466.60150 472.38600
+<CMD> zoomBox 290.51750 308.71750 453.02350 459.03050
+<CMD> zoomBox 314.37800 332.28650 431.78850 440.88750
+<CMD> zoomBox 331.61700 349.33400 416.44650 427.79850
+<CMD> zoomBox 344.07200 361.66700 405.36150 418.35800
+<CMD> zoomBox 348.93600 366.48350 401.03250 414.67100
+<CMD> zoomBox 359.57900 376.93500 391.57300 406.52850
+<CMD> zoomBox 364.28800 381.37450 387.40400 402.75600
+<CMD> zoomBox 365.49000 382.95750 385.13900 401.13200
+<CMD> zoomBox 367.38050 385.44750 381.57700 398.57900
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+**WARN: (IMPTCM-77):	Option "-routeEcoOnlyInLayers" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 943.01 (MB), peak = 1097.19 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will not be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=1186.9M, init mem=1188.8M)
+*info: Placed = 18            
+*info: Unplaced = 0           
+Placement Density:0.06%(100/162135)
+Placement Density (including fixed std cells):0.06%(100/162135)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1186.9M)
+**WARN: (IMPCK-8086):	The command changeUseClockNetStatus is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1186.9M) ***
+#ROUTE-DESIGN-CMD: N5-process: 0 [db_process_node=]
+#ROUTE-DESIGN-CMD: N3-process: 0 [db_process_node=]
+
+globalDetailRoute
+
+#setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+#setNanoRouteMode -routeReserveSpaceForMultiCut true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Wed May 25 01:16:16 2022
+#
+#WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk0 of net clk0 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk1 of net clk1 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk2 of net clk2 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/control0 of net control0 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/control1 of net control1 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/control2 of net control2 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input0 of net input0 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input1 of net input1 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input2 of net input2 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input3 of net input3 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input4 of net input4 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input5 of net input5 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input6 of net input6 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/input7 of net input7 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/output0 of net output0 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/output1 of net output1 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/output2 of net output2 because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#num needed restored net=0
+#need_extraction net=0 (total=62)
+#WARNING (NRDB-733) PIN clk0 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN clk1 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN clk2 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN control0 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN control1 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN control2 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input0 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input1 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input2 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input3 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input4 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input5 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input6 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN input7 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN output0 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN output1 in CELL_VIEW top does not have physical port.
+#WARNING (NRDB-733) PIN output2 in CELL_VIEW top does not have physical port.
+#NanoRoute Version 19.10-p002_1 NR190418-1643/19_10-UB
+#Start routing data preparation on Wed May 25 01:16:16 2022
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 58 nets.
+#Voltage range [1.100 - 1.100] has 2 nets.
+#Voltage range [0.000 - 0.000] has 2 nets.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 943.52 (MB), peak = 1097.19 (MB)
+#Merging special wires: starts on Wed May 25 01:16:16 2022 with memory = 943.72 (MB), peak = 1097.19 (MB)
+#
+#Merging special wires: cpu:00:00:00, real:00:00:00, mem:943.9 MB, peak:1.1 GB
+#
+#Finished routing data preparation on Wed May 25 01:16:16 2022
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 5.94 (MB)
+#Total memory = 943.85 (MB)
+#Peak memory = 1097.19 (MB)
+#
+#
+#Start global routing on Wed May 25 01:16:16 2022
+#
+#
+#Start global routing initialization on Wed May 25 01:16:16 2022
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Wed May 25 01:16:16 2022
+#
+#Start routing resource analysis on Wed May 25 01:16:16 2022
+#
+#Routing resource analysis is done on Wed May 25 01:16:17 2022
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal1         H        1228        3826      110199    75.93%
+#  Metal2         V        1019        3640      110199    80.96%
+#  Metal3         H        1126        3928      110199    77.57%
+#  Metal4         V         740        3919      110199    81.85%
+#  Metal5         H        1228        3826      110199    75.92%
+#  Metal6         V        1118        3541      110199    75.90%
+#  Metal7         H        1228        3826      110199    75.92%
+#  Metal8         V        1118        3541      110199    75.90%
+#  Metal9         H        1228        3826      110199    75.92%
+#  Metal10        V         446        1417      110199    75.90%
+#  Metal11        H         496        1525      110199    75.92%
+#  --------------------------------------------------------------
+#  Total                  10977      76.93%     1212189    77.06%
+#
+#
+#
+#
+#Global routing data preparation is done on Wed May 25 01:16:17 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 962.58 (MB), peak = 1097.19 (MB)
+#
+#
+#Global routing initialization is done on Wed May 25 01:16:17 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 962.66 (MB), peak = 1097.19 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 965.61 (MB), peak = 1097.19 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 965.71 (MB), peak = 1097.19 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 30 (skipped).
+#Total number of routable nets = 32.
+#Total number of nets in the design = 62.
+#
+#32 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              32  
+#-----------------------------
+#        Total              32  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              32  
+#-----------------------------
+#        Total              32  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#  Metal1        0(0.00%)   (0.00%)
+#  Metal2        0(0.00%)   (0.00%)
+#  Metal3        0(0.00%)   (0.00%)
+#  Metal4        0(0.00%)   (0.00%)
+#  Metal5        0(0.00%)   (0.00%)
+#  Metal6        0(0.00%)   (0.00%)
+#  Metal7        0(0.00%)   (0.00%)
+#  Metal8        0(0.00%)   (0.00%)
+#  Metal9        0(0.00%)   (0.00%)
+#  Metal10       0(0.00%)   (0.00%)
+#  Metal11       0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+#Hotspot report including placement blocked areas
+[hotspot] +------------+---------------+---------------+
+[hotspot] |    layer   |  max hotspot  | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] |   Metal1(H)   |          0.00 |          0.00 |
+[hotspot] |   Metal2(V)   |          0.00 |          0.00 |
+[hotspot] |   Metal3(H)   |          0.00 |          0.00 |
+[hotspot] |   Metal4(V)   |          0.00 |          0.00 |
+[hotspot] |   Metal5(H)   |          0.00 |          0.00 |
+[hotspot] |   Metal6(V)   |          0.00 |          0.00 |
+[hotspot] |   Metal7(H)   |          0.00 |          0.00 |
+[hotspot] |   Metal8(V)   |          0.00 |          0.00 |
+[hotspot] |   Metal9(H)   |          0.00 |          0.00 |
+[hotspot] |   Metal10(V)   |          0.00 |          0.00 |
+[hotspot] |   Metal11(H)   |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+[hotspot] |   worst    |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | all layers |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total wire length = 5047 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 2477 um.
+#Total wire length on LAYER Metal3 = 2571 um.
+#Total wire length on LAYER Metal4 = 0 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 157
+#Up-Via Summary (total 157):
+#           
+#-----------------------
+# Metal1             86
+# Metal2             71
+#-----------------------
+#                   157 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 23.74 (MB)
+#Total memory = 967.65 (MB)
+#Peak memory = 1097.19 (MB)
+#
+#Finished global routing on Wed May 25 01:16:17 2022
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 938.62 (MB), peak = 1097.19 (MB)
+#Start Track Assignment.
+#Done with 52 horizontal wires in 3 hboxes and 56 vertical wires in 3 hboxes.
+#Done with 7 horizontal wires in 3 hboxes and 15 vertical wires in 3 hboxes.
+#Done with 3 horizontal wires in 3 hboxes and 3 vertical wires in 3 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# Metal1         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal2      2480.57 	  0.01%  	  0.00% 	  0.00%
+# Metal3      2574.75 	  0.00%  	  0.00% 	  0.00%
+# Metal4         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal5         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal6         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal7         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal8         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal9         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal10        0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal11        0.00 	  0.00%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All        5055.32  	  0.00% 	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total wire length = 5081 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 17 um.
+#Total wire length on LAYER Metal2 = 2480 um.
+#Total wire length on LAYER Metal3 = 2585 um.
+#Total wire length on LAYER Metal4 = 0 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 157
+#Up-Via Summary (total 157):
+#           
+#-----------------------
+# Metal1             86
+# Metal2             71
+#-----------------------
+#                   157 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 940.35 (MB), peak = 1097.19 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 2.68 (MB)
+#Total memory = 940.55 (MB)
+#Peak memory = 1097.19 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   Improving pin accessing ...
+#    cpu time = 00:00:00, elapsed time = 00:00:00, memory = 954.68 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:00, elapsed time = 00:00:00, memory = 962.61 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:00, elapsed time = 00:00:00, memory = 962.61 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:00, elapsed time = 00:00:00, memory = 961.11 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:00, elapsed time = 00:00:01, memory = 960.69 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:01, elapsed time = 00:00:01, memory = 966.36 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:01, elapsed time = 00:00:01, memory = 965.09 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:01, elapsed time = 00:00:01, memory = 965.09 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:01, elapsed time = 00:00:01, memory = 964.15 (MB), peak = 1097.19 (MB)
+#   Improving pin accessing ...
+#    cpu time = 00:00:01, elapsed time = 00:00:01, memory = 963.44 (MB), peak = 1097.19 (MB)
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 963.59 (MB), peak = 1097.19 (MB)
+#Complete Detail Routing.
+#Total wire length = 5095 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 14 um.
+#Total wire length on LAYER Metal2 = 2515 um.
+#Total wire length on LAYER Metal3 = 2566 um.
+#Total wire length on LAYER Metal4 = 0 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 163
+#Up-Via Summary (total 163):
+#           
+#-----------------------
+# Metal1             85
+# Metal2             78
+#-----------------------
+#                   163 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = -0.55 (MB)
+#Total memory = 940.00 (MB)
+#Peak memory = 1097.19 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 957.31 (MB), peak = 1097.19 (MB)
+#
+#Total wire length = 5098 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 14 um.
+#Total wire length on LAYER Metal2 = 2504 um.
+#Total wire length on LAYER Metal3 = 2570 um.
+#Total wire length on LAYER Metal4 = 11 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 195
+#Up-Via Summary (total 195):
+#           
+#-----------------------
+# Metal1             85
+# Metal2            106
+# Metal3              4
+#-----------------------
+#                   195 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Total wire length = 5098 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 14 um.
+#Total wire length on LAYER Metal2 = 2504 um.
+#Total wire length on LAYER Metal3 = 2570 um.
+#Total wire length on LAYER Metal4 = 11 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 195
+#Up-Via Summary (total 195):
+#           
+#-----------------------
+# Metal1             85
+# Metal2            106
+# Metal3              4
+#-----------------------
+#                   195 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Start Post Route wire spreading..
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 963.67 (MB), peak = 1097.19 (MB)
+#CELL_VIEW top,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Wed May 25 01:16:20 2022
+#
+#
+#Start Post Route Wire Spread.
+#Done with 5 horizontal wires in 6 hboxes and 7 vertical wires in 6 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 5103 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 14 um.
+#Total wire length on LAYER Metal2 = 2507 um.
+#Total wire length on LAYER Metal3 = 2572 um.
+#Total wire length on LAYER Metal4 = 11 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 195
+#Up-Via Summary (total 195):
+#           
+#-----------------------
+# Metal1             85
+# Metal2            106
+# Metal3              4
+#-----------------------
+#                   195 
+#
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 957.12 (MB), peak = 1097.19 (MB)
+#CELL_VIEW top,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 943.99 (MB), peak = 1097.19 (MB)
+#CELL_VIEW top,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Post Route wire spread is done.
+#Total wire length = 5103 um.
+#Total half perimeter of net bounding box = 5114 um.
+#Total wire length on LAYER Metal1 = 14 um.
+#Total wire length on LAYER Metal2 = 2507 um.
+#Total wire length on LAYER Metal3 = 2572 um.
+#Total wire length on LAYER Metal4 = 11 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 195
+#Up-Via Summary (total 195):
+#           
+#-----------------------
+# Metal1             85
+# Metal2            106
+# Metal3              4
+#-----------------------
+#                   195 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 1.13 (MB)
+#Total memory = 941.68 (MB)
+#Peak memory = 1097.19 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:04
+#Increased memory = 5.17 (MB)
+#Total memory = 948.45 (MB)
+#Peak memory = 1097.19 (MB)
+#Number of warnings = 35
+#Total number of warnings = 70
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Wed May 25 01:16:21 2022
+#
+#Default setup view is reset to _default_view_.
+#routeDesign: cpu time = 00:00:04, elapsed time = 00:00:05, memory = 947.15 (MB), peak = 1097.19 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> zoomBox 365.92500 384.07000 382.62700 399.51900
+<CMD> zoomBox 362.24050 380.56400 385.35800 401.94700
+<CMD> zoomBox 359.90800 378.33700 387.10500 403.49350
+<CMD> zoomBox 350.15850 369.00750 394.44450 409.97050
+<CMD> zoomBox 345.69950 364.74100 397.80100 412.93300
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILL32 FILL2 FILL16 FILL1 FILL4 FILL64 FILL8 -prefix FILLER -markFixed
+**WARN: (IMPSP-9057):	Fillers being added in a FIXED mode to the whole design. Some subsequent 
+operations, such as antenna fixing, may fail due to fillers being marked 
+as 'FIXED'. If this was not intended, use deleteFiller command to undo.
+**WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 7248 filler insts (cell FILL64 / prefix FILLER).
+*INFO:   Added 246 filler insts (cell FILL32 / prefix FILLER).
+*INFO:   Added 14 filler insts (cell FILL16 / prefix FILLER).
+*INFO:   Added 11 filler insts (cell FILL8 / prefix FILLER).
+*INFO:   Added 249 filler insts (cell FILL4 / prefix FILLER).
+*INFO:   Added 246 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 243 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 8257 filler insts added - prefix FILLER (CPU: 0:00:00.2).
+For 8257 new insts, *** Applied 4 GNC rules (cpu = 0:00:00.0)
+<CMD> zoomBox 341.27500 359.16250 402.57050 415.85900
+<CMD> zoomBox 336.06900 352.59950 408.18200 419.30150
+<CMD> zoomBox 329.91200 344.84550 414.75050 423.31850
+<CMD> zoomBox 322.66800 335.72300 422.47850 428.04450
+<CMD> zoomBox 330.51200 345.03900 415.35100 423.51250
+<CMD> zoomBox 337.17900 352.95750 409.29250 419.66000
+<CMD> zoomBox 342.84650 359.68800 404.14300 416.38550
+<CMD> zoomBox 347.66400 365.40950 399.76600 413.60200
+<CMD> zoomBox 351.75850 370.27200 396.04550 411.23600
+<CMD> zoomBox 355.32500 372.71250 392.96900 407.53200
+<CMD> zoomBox 360.93350 376.55050 388.13100 401.70750
+<CMD> zoomBox 363.12350 378.04950 386.24150 399.43300
+<CMD> zoomBox 364.98050 379.32350 384.63100 397.49950
+<CMD> pan 0.07600 12.28400
+<CMD> zoomBox 366.48250 378.69450 383.18550 394.14400
+<CMD> zoomBox 367.60400 379.89050 381.80150 393.02250
+<CMD> zoomBox 368.54900 380.90400 380.61700 392.06650
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 1208.7) ***
+
+**WARN: (IMPVFG-257):	verifyGeometry command is replaced by verify_drc command. It still works in this release but will be removed in future release. Please update your script to use the new command.
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 1920
+VG: elapsed time: 34.00
+Begin Summary ...
+  Cells       : 32
+  SameNet     : 249
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 112
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 393 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:34.0  MEM: 308.6M)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 }
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed May 25 01:20:53 2022
+
+Design Name: top
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (931.8000, 960.2900)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net vddc: has an unconnected terminal, has special routes with opens, has regular routing with opens.
+Net vddo: no routing.
+Net vssc: has special routes with opens.
+Net vsso: no routing.
+
+Begin Summary 
+    2 Problem(s) (IMPVFC-98): Net has no global routing and no special routing.
+    1 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+    31 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
+    4 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+    38 total info(s) created.
+End Summary
+
+End Time: Wed May 25 01:20:53 2022
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 38 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> defOut -floorplan -netlist -routing top.def
+Writing DEF file 'top.def', current time is Wed May 25 01:21:30 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'top.def' is written, current time is Wed May 25 01:21:30 2022 ...
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> set dbgLefDefOutVersion 5.8
+**ERROR: (IMPSYT-16325):	Floorplan has no partitions.
+<CMD> saveFPlan top.fp
+Save Adaptive View Pruing View Names to Text file
+<CMD> saveTestcase
+#% Begin save design ... (date=05/25 01:22:15, mem=964.2M)
+% Begin Save ccopt configuration ... (date=05/25 01:22:15, mem=966.2M)
+% End Save ccopt configuration ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=967.1M, current mem=967.1M)
+% Begin Save netlist data ... (date=05/25 01:22:15, mem=967.1M)
+Writing Binary DB to /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=967.1M, current mem=967.1M)
+Saving congestion map file /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/25 01:22:15, mem=967.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=967.8M, current mem=967.8M)
+% Begin Save clock tree data ... (date=05/25 01:22:15, mem=968.1M)
+% End Save clock tree data ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=968.1M, current mem=968.1M)
+Saving preference file /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=05/25 01:22:15, mem=968.5M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=968.5M, current mem=968.5M)
+Saving PG file /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.pg.gz
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1292.4M) ***
+Saving Drc markers ...
+... 431 markers are saved ...
+... 393 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=05/25 01:22:15, mem=968.6M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruing View Names to Binary file
+% End Save placement data ... (date=05/25 01:22:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=968.6M, current mem=968.6M)
+% Begin Save routing data ... (date=05/25 01:22:15, mem=968.6M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1292.4M) ***
+% End Save routing data ... (date=05/25 01:22:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=968.8M, current mem=968.8M)
+Saving property file /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1295.4M) ***
+#Saving pin access data to file /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.apa ...
+#
+% Begin Save power constraints data ... (date=05/25 01:22:16, mem=969.6M)
+% End Save power constraints data ... (date=05/25 01:22:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=969.7M, current mem=969.7M)
+#% End save design ... (date=05/25 01:22:16, total cpu=0:00:00.3, real=0:00:01.0, peak res=969.7M, current mem=969.7M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+.
+...
+Creating testcase.csh file...
+Modifying Post File /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.mode ...
+Modifying View File...
+Updating MMMC files...
+Creating testcase.tcl script...
+Modifying Init File /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/top.globals ...
+Modifying Power Constraints File...
+**ERROR: (IMPIMEX-7328):	Saved side file '/local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/testcase/design/top.enc.dat/genus._default_constraint_mode_.sdc' is not registered. Please contact your PE to make the decision, if the file is really needed, contact design import/export to get it registered.
+**ERROR: Save Testcase failed.
+<CMD> zoomBox 367.90100 379.24000 382.09900 392.37250
+<CMD> zoomBox 366.23600 374.97150 385.88750 393.14850
+<CMD> saveNetlist top.v
+Writing Netlist "top.v" ...
+<CMD> saveDesign top
+#% Begin save design ... (date=05/25 01:23:03, mem=975.0M)
+% Begin Save ccopt configuration ... (date=05/25 01:23:03, mem=975.0M)
+% End Save ccopt configuration ... (date=05/25 01:23:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+% Begin Save netlist data ... (date=05/25 01:23:03, mem=975.0M)
+Writing Binary DB to top.dat.tmp/top.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/25 01:23:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+Saving congestion map file top.dat.tmp/top.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/25 01:23:04, mem=975.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+% Begin Save clock tree data ... (date=05/25 01:23:04, mem=975.0M)
+% End Save clock tree data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+Saving preference file top.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=05/25 01:23:04, mem=975.0M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+Saving PG file top.dat.tmp/top.pg.gz
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1292.6M) ***
+Saving Drc markers ...
+... 431 markers are saved ...
+... 393 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=05/25 01:23:04, mem=975.0M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruing View Names to Binary file
+% End Save placement data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+% Begin Save routing data ... (date=05/25 01:23:04, mem=975.0M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1292.6M) ***
+% End Save routing data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+Saving property file top.dat.tmp/top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1295.6M) ***
+#Saving pin access data to file top.dat.tmp/top.apa ...
+#
+% Begin Save power constraints data ... (date=05/25 01:23:04, mem=975.0M)
+% End Save power constraints data ... (date=05/25 01:23:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=975.0M, current mem=975.0M)
+_default_rc_corner_
+Generated self-contained design top.dat.tmp
+#% End save design ... (date=05/25 01:23:05, total cpu=0:00:01.3, real=0:00:02.0, peak res=977.1M, current mem=977.1M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> zoomBox 364.24850 372.84450 387.36800 394.22950
+<CMD> zoomBox 361.93100 370.35850 389.13100 395.51750
+<CMD> zoomBox 356.01100 364.00650 393.65850 398.82900
+<CMD> pan 3.06850 12.96300
+<CMD> zoomBox 356.54400 365.01200 400.83500 405.97950
+<CMD> zoomBox 353.55100 360.35050 405.65800 408.54800
+<CMD> zoomBox 350.02950 354.86650 411.33200 411.56950
+<CMD> zoomBox 340.98300 340.82500 425.83050 419.30600
+<CMD> zoomBox 335.23000 331.89550 435.05050 424.22600
+<CMD> zoomBox 328.46200 321.39000 445.89750 430.01400
+<CMD> zoomBox 320.47250 309.03050 458.63200 436.82350
+<CMD> zoomBox 311.07300 294.49000 473.61400 444.83500
+<CMD> zoomBox 300.01500 277.38300 491.24000 454.26000
+<CMD> zoomBox 271.70050 233.58100 536.37200 478.39350
+<CMD> zoomBox 253.69400 205.72600 565.07250 493.74100
+<CMD> zoomBox 232.51000 172.95550 598.83800 511.79700
+<CMD> zoomBox 207.58800 134.40150 638.56250 533.03900
+<CMD> zoomBox 178.07150 89.04400 685.10050 558.02950
+<CMD> zoomBox 102.49250 -27.09550 804.26300 622.01950
+<CMD> zoomBox 54.42950 -100.95250 880.04200 662.71250
+<CMD> pan 17.08900 -106.25100
+<CMD> zoomBox 71.51800 62.72800 773.28900 711.84350
+<CMD> zoomBox 128.30400 130.13600 724.80950 681.88450
+<CMD> pan -40.89900 174.68750
+<CMD> zoomBox 128.38050 339.68450 635.41050 808.67100
+<CMD> zoomBox 163.80050 368.51250 594.77600 767.15100
+<CMD> zoomBox 193.90700 392.93250 560.23650 731.77550
+<CMD> zoomBox 219.49800 413.68950 530.87800 701.70600
+<CMD> zoomBox 241.25050 431.33300 505.92350 676.14700
+<CMD> zoomBox 259.74000 446.33000 484.71200 654.42200
+<CMD> zoomBox 280.17050 455.32300 471.39700 632.20150
+<CMD> zoomBox 297.46200 462.93000 460.00500 613.27700
+<CMD> zoomBox 312.09700 469.36400 450.25900 597.15950
+<CMD> zoomBox 324.34950 474.80650 441.78700 583.43250
+<CMD> pan 8.96350 100.62600
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> defOut -floorplan -netlist -routing top.def
+Writing DEF file 'top.def', current time is Wed May 25 01:23:41 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'top.def' is written, current time is Wed May 25 01:23:41 2022 ...
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> set dbgLefDefOutVersion 5.8
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed May 25 01:23:54 2022
+  Total CPU time:     0:02:18
+  Total real time:    0:21:51
+  Peak memory (main): 1521.34MB
+
+
+*** Memory Usage v#1 (Current mem = 1303.020M, initial mem = 256.684M) ***
+*** Message Summary: 160 warning(s), 9 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:18, real=0:21:50, mem=1303.0M) ---

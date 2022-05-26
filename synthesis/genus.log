@@ -1,0 +1,148 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.10-p002_1, built Tue May 21 03:26:01 PDT 2019
+Options: -legacy_ui 
+Date:    Tue May 24 18:01:30 2022
+Host:    srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB) (1584992760KB)
+PID:     124346
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 1099 days old.
+legacy_genus:/> gui_show
+legacy_genus:/> set OUTPUT_DIR ./run_dir
+./run_dir
+legacy_genus:/> set attribute lib_search_path ../library
+wrong # args: should be "set varName ?newValue?"
+legacy_genus:/> set attribute lib_search_path "../library"
+wrong # args: should be "set varName ?newValue?"
+legacy_genus:/> set attribute lib_search_path ./library
+wrong # args: should be "set varName ?newValue?"
+legacy_genus:/> set_attribute lib_search_path ./library
+  Setting attribute of root '/': 'lib_search_path' = ./library
+legacy_genus:/> set_attribute lib_search_path ../library
+  Setting attribute of root '/': 'lib_search_path' = ../library
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> ls -F
+Error   : An invalid option was specified. [TUI-204] [vls]
+        : An option named '-F' could not be found.
+        : Run 'command_name -help' to check all valid options. To correct the option and rerun the command.
+  vls: browses an object or directory 
+
+Usage: vls [-computed] [-attribute] [-long] [-dir] [-width <integer>] [-R]
+           [-regexp <string>] [<object>+] [> file]
+
+    [-computed]:
+        lists computed attributes 
+    [-attribute]:
+        lists attributes 
+    [-long]:
+        long listing 
+    [-dir]:
+        does not print contents of directories 
+    [-width <integer>]:
+        screen width (default=80) 
+    [-R]:
+        recursive listing 
+    [-regexp <string>]:
+        specifies regular expression to filter attribute names 
+    [<object>+]:
+        the object(s) of interest 
+1
+legacy_genus:/> vls
+./              designs/        hdl_libraries/  messages/       tech/         
+commands/       flows/          libraries/      object_types/   
+legacy_genus:/> set_attribute library gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> cd .
+legacy_genus:/> vls
+./              designs/        hdl_libraries/  messages/       tech/         
+commands/       flows/          libraries/      object_types/   
+legacy_genus:/> cd ..
+Error   : A required object parameter could not be found. [TUI-61] [vcd]
+        : An object named '..' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  vcd: sets position in object hierarchy 
+
+Usage: vcd [<object>]
+
+    [<object>]:
+        dos target directory 
+1
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute lib_search_path ./library
+  Setting attribute of root '/': 'lib_search_path' = ./library
+legacy_genus:/> vls
+./              designs/        hdl_libraries/  messages/       tech/         
+commands/       flows/          libraries/      object_types/   

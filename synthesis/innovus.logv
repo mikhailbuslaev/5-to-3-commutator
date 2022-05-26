@@ -1,0 +1,208 @@
+[05/24 22:31:23      0s] 
+[05/24 22:31:23      0s] Cadence Innovus(TM) Implementation System.
+[05/24 22:31:23      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/24 22:31:23      0s] 
+[05/24 22:31:23      0s] Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+[05/24 22:31:23      0s] Options:	
+[05/24 22:31:23      0s] Date:		Tue May 24 22:31:23 2022
+[05/24 22:31:23      0s] Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+[05/24 22:31:23      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/24 22:31:23      0s] 
+[05/24 22:31:23      0s] License:
+[05/24 22:31:23      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[05/24 22:31:23      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/24 22:31:33      9s] @(#)CDS: Innovus v19.10-p002_1 (64bit) 04/19/2019 15:18 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:31:33      9s] @(#)CDS: NanoRoute 19.10-p002_1 NR190418-1643/19_10-UB (database version 18.20, 458.7.1) {superthreading v1.51}
+[05/24 22:31:33      9s] @(#)CDS: AAE 19.10-b002 (64bit) 04/19/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:31:33      9s] @(#)CDS: CTE 19.10-p002_1 () Apr 19 2019 06:39:48 ( )
+[05/24 22:31:33      9s] @(#)CDS: SYNTECH 19.10-b001_1 () Apr  4 2019 03:00:51 ( )
+[05/24 22:31:33      9s] @(#)CDS: CPE v19.10-p002
+[05/24 22:31:33      9s] @(#)CDS: IQuantus/TQuantus 19.1.0-e101 (64bit) Thu Feb 28 10:29:46 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:31:33      9s] @(#)CDS: OA 22.60-p012 Thu Dec 20 13:36:08 2018
+[05/24 22:31:33      9s] @(#)CDS: SGN 18.10-d003 (18-Jul-2018) (64 bit executable, Qt5.9.1)
+[05/24 22:31:33      9s] @(#)CDS: RCDB 11.14.18
+[05/24 22:31:33      9s] @(#)CDS: STYLUS 19.10-b001_1 (03/15/2019 08:18 PDT)
+[05/24 22:31:33      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_49133_srv-eda-04_r10021492_MPADNZ.
+
+[05/24 22:31:33      9s] Change the soft stacksize limit to 0.2%RAM (3095 mbytes). Set global soft_stack_size_limit to change the value.
+[05/24 22:31:33     10s] 
+[05/24 22:31:33     10s] **INFO:  MMMC transition support version v31-84 
+[05/24 22:31:33     10s] 
+[05/24 22:31:33     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/24 22:31:33     10s] <CMD> suppressMessage ENCEXT-2799
+[05/24 22:31:33     10s] <CMD> getVersion
+[05/24 22:31:34     10s] [INFO] Loading PVS 16.15 fill procedures
+[05/24 22:31:34     10s] <CMD> win
+[05/24 22:33:35     16s] <CMD> save_global Default.globals
+[05/24 22:33:39     16s] <CMD> set init_gnd_net {vssc vsso}
+[05/24 22:33:39     16s] <CMD> set init_lef_file {gsclib045_tech.lef gsclib045_macro.lef giolib045.lef}
+[05/24 22:33:39     16s] <CMD> set init_verilog genus_invs_des/genus.v
+[05/24 22:33:39     16s] <CMD> set init_mmmc_file genus_invs_des/genus.mmode.tcl
+[05/24 22:33:39     16s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 22:33:39     16s] <CMD> init_design
+[05/24 22:33:39     16s] #% Begin Load MMMC data ... (date=05/24 22:33:39, mem=523.9M)
+[05/24 22:33:39     16s] #% End Load MMMC data ... (date=05/24 22:33:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=524.0M, current mem=524.0M)
+[05/24 22:33:39     16s] 
+[05/24 22:33:39     16s] Loading LEF file gsclib045_tech.lef ...
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[05/24 22:33:39     16s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[05/24 22:33:39     16s] 
+[05/24 22:33:39     16s] Loading LEF file gsclib045_macro.lef ...
+[05/24 22:33:39     16s] Set DBUPerIGU to M2 pitch 400.
+[05/24 22:33:39     16s] 
+[05/24 22:33:39     16s] Loading LEF file giolib045.lef ...
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-201' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (IMPLF-200):	Pin 'AY' in macro 'PADANALOG' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/24 22:33:39     16s] Type 'man IMPLF-200' for more detail.
+[05/24 22:33:39     16s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/24 22:33:39     16s] To increase the message display limit, refer to the product command reference manual.
+[05/24 22:33:39     16s] 
+[05/24 22:33:39     16s] viaInitial starts at Tue May 24 22:33:39 2022
+viaInitial ends at Tue May 24 22:33:39 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/24 22:33:39     16s] Loading view definition file from genus_invs_des/genus.mmode.tcl
+[05/24 22:33:39     16s] Reading default_library_set timing library '/local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:39     16s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/24 22:33:40     17s] Read 489 cells in library 'fast_vdd1v0' 
+[05/24 22:33:40     17s] *** End library_loading (cpu=0.01min, real=0.02min, mem=12.4M, fe_cpu=0.29min, fe_real=2.28min, fe_mem=771.7M) ***
+[05/24 22:33:40     17s] #% Begin Load netlist data ... (date=05/24 22:33:40, mem=541.5M)
+[05/24 22:33:40     17s] *** Begin netlist parsing (mem=771.7M) ***
+[05/24 22:33:40     17s] Created 489 new cells from 1 timing libraries.
+[05/24 22:33:40     17s] Reading netlist ...
+[05/24 22:33:40     17s] Backslashed names will retain backslash and a trailing blank character.
+[05/24 22:33:40     17s] Reading verilog netlist 'genus_invs_des/genus.v'
+[05/24 22:33:40     17s] **ERROR: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 68 near the text ) for the issue: 'undefined instance bus port'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-366):	The macro cell 'PADDI' is LEF-defined, but the bus port 'A' used in the netlist is not defined in LEF. Check and correct the port name, or define the bus port in LEF file.
+Type 'man IMPVL-366' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 68 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[05/24 22:33:40     17s] Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-357):	Signal port (Y) is connected by a bus.  The extra upper bus bits will be ignored.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 69 near the text ) for the issue: 'undefined instance bus port'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-366):	The macro cell 'PADDI' is LEF-defined, but the bus port 'A' used in the netlist is not defined in LEF. Check and correct the port name, or define the bus port in LEF file.
+Type 'man IMPVL-366' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 69 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[05/24 22:33:40     17s] Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-357):	Signal port (Y) is connected by a bus.  The extra upper bus bits will be ignored.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 70 near the text ) for the issue: 'undefined instance bus port'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-366):	The macro cell 'PADDI' is LEF-defined, but the bus port 'A' used in the netlist is not defined in LEF. Check and correct the port name, or define the bus port in LEF file.
+Type 'man IMPVL-366' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 70 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[05/24 22:33:40     17s] Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **WARN: (IMPVL-357):	Signal port (Y) is connected by a bus.  The extra upper bus bits will be ignored.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-209):	In Verilog file 'genus_invs_des/genus.v', check line 71 near the text ) for the issue: 'undefined instance bus port'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[05/24 22:33:40     17s] **ERROR: (IMPVL-366):	The macro cell 'PADDO' is LEF-defined, but the bus port 'Y' used in the netlist is not defined in LEF. Check and correct the port name, or define the bus port in LEF file.
+Type 'man IMPVL-366' for more detail.
+[05/24 22:33:40     17s] Verilog file 'genus_invs_des/genus.v' has errors!  See above.
+[05/24 22:33:40     17s] 
+[05/24 22:33:40     17s] *** Memory Usage v#1 (Current mem = 771.711M, initial mem = 256.684M) ***
+[05/24 22:33:40     17s] #% End Load netlist data ... (date=05/24 22:33:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=549.0M, current mem=549.0M)
+[05/24 22:33:40     17s] **ERROR: (IMPVL-902):	Failed to read netlist genus_invs_des/genus.v. See previous error messages for details.  Resolve the issues and reload the design.
+[05/24 22:46:09     45s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/24 22:46:11     45s] Innovus terminated by user interrupt.
+[05/24 22:46:11     45s] 
+[05/24 22:46:11     45s] *** Memory Usage v#1 (Current mem = 767.711M, initial mem = 256.684M) ***
+[05/24 22:46:11     45s] 
+[05/24 22:46:11     45s] *** Summary of all messages that are not suppressed in this session:
+[05/24 22:46:11     45s] Severity  ID               Count  Summary                                  
+[05/24 22:46:11     45s] WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+[05/24 22:46:11     45s] WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/24 22:46:11     45s] WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/24 22:46:11     45s] ERROR     IMPVL-902            1  Failed to read netlist %s. See previous ...
+[05/24 22:46:11     45s] ERROR     IMPVL-209            7  In Verilog file '%s', check line %d near...
+[05/24 22:46:11     45s] WARNING   IMPVL-357            3  Signal port (%s) is connected by a bus. ...
+[05/24 22:46:11     45s] ERROR     IMPVL-366            4  The macro cell '%s' is LEF-defined, but ...
+[05/24 22:46:11     45s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[05/24 22:46:11     45s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/24 22:46:11     45s] *** Message Summary: 66 warning(s), 12 error(s)
+[05/24 22:46:11     45s] 
+[05/24 22:46:11     45s] --- Ending "Innovus" (totcpu=0:00:45.4, real=0:14:48, mem=767.7M) ---

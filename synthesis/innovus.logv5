@@ -1,0 +1,380 @@
+[05/25 00:04:25      0s] 
+[05/25 00:04:25      0s] Cadence Innovus(TM) Implementation System.
+[05/25 00:04:25      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/25 00:04:25      0s] 
+[05/25 00:04:25      0s] Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+[05/25 00:04:25      0s] Options:	
+[05/25 00:04:25      0s] Date:		Wed May 25 00:04:25 2022
+[05/25 00:04:25      0s] Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+[05/25 00:04:25      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/25 00:04:25      0s] 
+[05/25 00:04:25      0s] License:
+[05/25 00:04:25      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[05/25 00:04:25      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/25 00:04:35      9s] @(#)CDS: Innovus v19.10-p002_1 (64bit) 04/19/2019 15:18 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 00:04:35      9s] @(#)CDS: NanoRoute 19.10-p002_1 NR190418-1643/19_10-UB (database version 18.20, 458.7.1) {superthreading v1.51}
+[05/25 00:04:35      9s] @(#)CDS: AAE 19.10-b002 (64bit) 04/19/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 00:04:35      9s] @(#)CDS: CTE 19.10-p002_1 () Apr 19 2019 06:39:48 ( )
+[05/25 00:04:35      9s] @(#)CDS: SYNTECH 19.10-b001_1 () Apr  4 2019 03:00:51 ( )
+[05/25 00:04:35      9s] @(#)CDS: CPE v19.10-p002
+[05/25 00:04:35      9s] @(#)CDS: IQuantus/TQuantus 19.1.0-e101 (64bit) Thu Feb 28 10:29:46 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 00:04:35      9s] @(#)CDS: OA 22.60-p012 Thu Dec 20 13:36:08 2018
+[05/25 00:04:35      9s] @(#)CDS: SGN 18.10-d003 (18-Jul-2018) (64 bit executable, Qt5.9.1)
+[05/25 00:04:35      9s] @(#)CDS: RCDB 11.14.18
+[05/25 00:04:35      9s] @(#)CDS: STYLUS 19.10-b001_1 (03/15/2019 08:18 PDT)
+[05/25 00:04:35      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_132130_srv-eda-04_r10021492_OTuVDH.
+
+[05/25 00:04:35      9s] Change the soft stacksize limit to 0.2%RAM (3095 mbytes). Set global soft_stack_size_limit to change the value.
+[05/25 00:04:35      9s] 
+[05/25 00:04:35      9s] **INFO:  MMMC transition support version v31-84 
+[05/25 00:04:35      9s] 
+[05/25 00:04:35      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/25 00:04:35      9s] <CMD> suppressMessage ENCEXT-2799
+[05/25 00:04:35     10s] <CMD> getVersion
+[05/25 00:04:36     10s] [INFO] Loading PVS 16.15 fill procedures
+[05/25 00:04:36     10s] <CMD> win
+[05/25 00:09:11     22s] <CMD> save_global Default.globals
+[05/25 00:09:15     23s] <CMD> set init_gnd_net {vssc vsso}
+[05/25 00:09:15     23s] <CMD> set init_lef_file {gsclib045_tech.lef gsclib045_macro.lef giolib045.lef}
+[05/25 00:09:15     23s] <CMD> set init_verilog genus_invs_des/genus.v
+[05/25 00:09:15     23s] <CMD> set init_mmmc_file genus_invs_des/genus.mmode.tcl
+[05/25 00:09:15     23s] <CMD> set init_io_file top.save.io
+[05/25 00:09:15     23s] <CMD> set init_top_cell top
+[05/25 00:09:15     23s] <CMD> set init_pwr_net {vddc vddo}
+[05/25 00:09:15     23s] <CMD> init_design
+[05/25 00:09:15     23s] #% Begin Load MMMC data ... (date=05/25 00:09:15, mem=524.7M)
+[05/25 00:09:15     23s] #% End Load MMMC data ... (date=05/25 00:09:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=524.8M, current mem=524.8M)
+[05/25 00:09:15     23s] 
+[05/25 00:09:15     23s] Loading LEF file gsclib045_tech.lef ...
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[05/25 00:09:15     23s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[05/25 00:09:15     23s] 
+[05/25 00:09:15     23s] Loading LEF file gsclib045_macro.lef ...
+[05/25 00:09:15     23s] Set DBUPerIGU to M2 pitch 400.
+[05/25 00:09:15     23s] 
+[05/25 00:09:15     23s] Loading LEF file giolib045.lef ...
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-201' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (IMPLF-200):	Pin 'AY' in macro 'PADANALOG' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 00:09:15     23s] Type 'man IMPLF-200' for more detail.
+[05/25 00:09:15     23s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/25 00:09:15     23s] To increase the message display limit, refer to the product command reference manual.
+[05/25 00:09:15     23s] 
+[05/25 00:09:15     23s] viaInitial starts at Wed May 25 00:09:15 2022
+viaInitial ends at Wed May 25 00:09:15 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/25 00:09:15     23s] Loading view definition file from genus_invs_des/genus.mmode.tcl
+[05/25 00:09:15     23s] Reading default_library_set timing library '/local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:15     23s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /local/3/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[05/25 00:09:16     23s] Read 489 cells in library 'fast_vdd1v0' 
+[05/25 00:09:16     23s] *** End library_loading (cpu=0.01min, real=0.02min, mem=11.4M, fe_cpu=0.40min, fe_real=4.85min, fe_mem=770.7M) ***
+[05/25 00:09:16     23s] #% Begin Load netlist data ... (date=05/25 00:09:16, mem=542.3M)
+[05/25 00:09:16     23s] *** Begin netlist parsing (mem=770.7M) ***
+[05/25 00:09:16     23s] Created 489 new cells from 1 timing libraries.
+[05/25 00:09:16     23s] Reading netlist ...
+[05/25 00:09:16     23s] Backslashed names will retain backslash and a trailing blank character.
+[05/25 00:09:16     23s] Reading verilog netlist 'genus_invs_des/genus.v'
+[05/25 00:09:16     23s] 
+[05/25 00:09:16     23s] *** Memory Usage v#1 (Current mem = 770.727M, initial mem = 264.684M) ***
+[05/25 00:09:16     23s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=770.7M) ***
+[05/25 00:09:16     23s] #% End Load netlist data ... (date=05/25 00:09:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=549.7M, current mem=549.7M)
+[05/25 00:09:16     23s] Set top cell to top.
+[05/25 00:09:16     23s] Hooked 489 DB cells to tlib cells.
+[05/25 00:09:16     23s] Starting recursive module instantiation check.
+[05/25 00:09:16     23s] No recursion found.
+[05/25 00:09:16     23s] Building hierarchical netlist for Cell top ...
+[05/25 00:09:16     23s] *** Netlist is unique.
+[05/25 00:09:16     23s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[05/25 00:09:16     23s] ** info: there are 602 modules.
+[05/25 00:09:16     23s] ** info: there are 18 stdCell insts.
+[05/25 00:09:16     23s] ** info: there are 23 Pad insts.
+[05/25 00:09:16     23s] 
+[05/25 00:09:16     23s] *** Memory Usage v#1 (Current mem = 815.152M, initial mem = 264.684M) ***
+[05/25 00:09:16     23s] Reading IO assignment file "top.save.io" ...
+[05/25 00:09:16     23s] Adjusting Core to Bottom to: 0.1600.
+[05/25 00:09:16     23s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:09:16     23s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:09:16     23s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:09:16     23s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:09:16     23s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:09:16     23s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:09:16     23s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:09:16     23s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:09:16     23s] Set Default Net Delay as 1000 ps.
+[05/25 00:09:16     23s] Set Default Net Load as 0.5 pF. 
+[05/25 00:09:16     23s] Set Default Input Pin Transition as 0.1 ps.
+[05/25 00:09:16     23s] Pre-connect netlist-defined P/G connections...
+[05/25 00:09:16     23s]   Updated 23 instances.
+[05/25 00:09:16     24s] Extraction setup Started 
+[05/25 00:09:16     24s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/25 00:09:16     24s] Type 'man IMPEXT-2773' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.0736 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.0604 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M10 is not defined in the cap table. Therefore, the LEF value 0.0214 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M11 is not defined in the cap table. Therefore, the LEF value 0.021 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/25 00:09:16     24s] Summary of Active RC-Corners : 
+[05/25 00:09:16     24s]  
+[05/25 00:09:16     24s]  Analysis View: _default_view_
+[05/25 00:09:16     24s]     RC-Corner Name        : _default_rc_corner_
+[05/25 00:09:16     24s]     RC-Corner Index       : 0
+[05/25 00:09:16     24s]     RC-Corner Temperature : 0 Celsius
+[05/25 00:09:16     24s]     RC-Corner Cap Table   : ''
+[05/25 00:09:16     24s]     RC-Corner PreRoute Res Factor         : 1
+[05/25 00:09:16     24s]     RC-Corner PreRoute Cap Factor         : 1
+[05/25 00:09:16     24s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/25 00:09:16     24s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/25 00:09:16     24s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/25 00:09:16     24s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[05/25 00:09:16     24s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[05/25 00:09:16     24s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/25 00:09:16     24s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/25 00:09:16     24s] LayerId::1 widthSet size::1
+[05/25 00:09:16     24s] LayerId::2 widthSet size::1
+[05/25 00:09:16     24s] LayerId::3 widthSet size::1
+[05/25 00:09:16     24s] LayerId::4 widthSet size::1
+[05/25 00:09:16     24s] LayerId::5 widthSet size::1
+[05/25 00:09:16     24s] LayerId::6 widthSet size::1
+[05/25 00:09:16     24s] LayerId::7 widthSet size::1
+[05/25 00:09:16     24s] LayerId::8 widthSet size::1
+[05/25 00:09:16     24s] LayerId::9 widthSet size::1
+[05/25 00:09:16     24s] LayerId::10 widthSet size::1
+[05/25 00:09:16     24s] LayerId::11 widthSet size::1
+[05/25 00:09:16     24s] Updating RC grid for preRoute extraction ...
+[05/25 00:09:16     24s] Initializing multi-corner resistance tables ...
+[05/25 00:09:16     24s] *Info: initialize multi-corner CTS.
+[05/25 00:09:16     24s] Reading timing constraints file 'genus_invs_des/genus._default_constraint_mode_.sdc' ...
+[05/25 00:09:16     24s] Current (total cpu=0:00:24.3, real=0:04:51, peak res=713.9M, current mem=713.9M)
+[05/25 00:09:16     24s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 9).
+[05/25 00:09:16     24s] 
+[05/25 00:09:16     24s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 10).
+[05/25 00:09:16     24s] 
+[05/25 00:09:16     24s] **WARN: (TCLCMD-1041):	current_design should use the top cell as a argument (File genus_invs_des/genus._default_constraint_mode_.sdc, Line 13).
+[05/25 00:09:16     24s] 
+[05/25 00:09:16     24s] INFO (CTE): Reading of timing constraints file genus_invs_des/genus._default_constraint_mode_.sdc completed, with 3 WARNING
+[05/25 00:09:16     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=714.8M, current mem=714.8M)
+[05/25 00:09:16     24s] Current (total cpu=0:00:24.3, real=0:04:51, peak res=714.8M, current mem=714.8M)
+[05/25 00:09:16     24s] Creating Cell Server ...(0, 1, 1, 1)
+[05/25 00:09:16     24s] Summary for sequential cells identification: 
+[05/25 00:09:16     24s]   Identified SBFF number: 104
+[05/25 00:09:16     24s]   Identified MBFF number: 0
+[05/25 00:09:16     24s]   Identified SB Latch number: 0
+[05/25 00:09:16     24s]   Identified MB Latch number: 0
+[05/25 00:09:16     24s]   Not identified SBFF number: 16
+[05/25 00:09:16     24s]   Not identified MBFF number: 0
+[05/25 00:09:16     24s]   Not identified SB Latch number: 0
+[05/25 00:09:16     24s]   Not identified MB Latch number: 0
+[05/25 00:09:16     24s]   Number of sequential cells which are not FFs: 32
+[05/25 00:09:16     24s] Total number of combinational cells: 327
+[05/25 00:09:16     24s] Total number of sequential cells: 152
+[05/25 00:09:16     24s] Total number of tristate cells: 10
+[05/25 00:09:16     24s] Total number of level shifter cells: 0
+[05/25 00:09:16     24s] Total number of power gating cells: 0
+[05/25 00:09:16     24s] Total number of isolation cells: 0
+[05/25 00:09:16     24s] Total number of power switch cells: 0
+[05/25 00:09:16     24s] Total number of pulse generator cells: 0
+[05/25 00:09:16     24s] Total number of always on buffers: 0
+[05/25 00:09:16     24s] Total number of retention cells: 0
+[05/25 00:09:16     24s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[05/25 00:09:16     24s] Total number of usable buffers: 16
+[05/25 00:09:16     24s] List of unusable buffers:
+[05/25 00:09:16     24s] Total number of unusable buffers: 0
+[05/25 00:09:16     24s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[05/25 00:09:16     24s] Total number of usable inverters: 19
+[05/25 00:09:16     24s] List of unusable inverters:
+[05/25 00:09:16     24s] Total number of unusable inverters: 0
+[05/25 00:09:16     24s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[05/25 00:09:16     24s] Total number of identified usable delay cells: 8
+[05/25 00:09:16     24s] List of identified unusable delay cells:
+[05/25 00:09:16     24s] Total number of identified unusable delay cells: 0
+[05/25 00:09:16     24s] Creating Cell Server, finished. 
+[05/25 00:09:16     24s] 
+[05/25 00:09:16     24s] Deleting Cell Server ...
+[05/25 00:09:16     24s] #% Begin Load MMMC data ... (date=05/25 00:09:16, mem=736.8M)
+[05/25 00:09:16     24s] #% End Load MMMC data ... (date=05/25 00:09:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=736.8M, current mem=736.8M)
+[05/25 00:09:16     24s] **WARN: (IMPSYC-2):	Timing information is not defined for cell PADVSSIOR; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+[05/25 00:09:16     24s] Type 'man IMPSYC-2' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPSYC-2):	Timing information is not defined for cell PADVDDIOR; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+[05/25 00:09:16     24s] Type 'man IMPSYC-2' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPSYC-2):	Timing information is not defined for cell PADVDD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+[05/25 00:09:16     24s] Type 'man IMPSYC-2' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPSYC-2):	Timing information is not defined for cell PADDO; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+[05/25 00:09:16     24s] Type 'man IMPSYC-2' for more detail.
+[05/25 00:09:16     24s] **WARN: (IMPSYC-2):	Timing information is not defined for cell PADDI; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+[05/25 00:09:16     24s] Type 'man IMPSYC-2' for more detail.
+[05/25 00:09:16     24s] 
+[05/25 00:09:16     24s] *** Summary of all messages that are not suppressed in this session:
+[05/25 00:09:16     24s] Severity  ID               Count  Summary                                  
+[05/25 00:09:16     24s] WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+[05/25 00:09:16     24s] WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/25 00:09:16     24s] WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/25 00:09:16     24s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/25 00:09:16     24s] WARNING   IMPEXT-2766         11  The sheet resistance for layer %s is not...
+[05/25 00:09:16     24s] WARNING   IMPEXT-2773         11  The via resistance between layers %s and...
+[05/25 00:09:16     24s] WARNING   IMPSYC-2             5  Timing information is not defined for ce...
+[05/25 00:09:16     24s] WARNING   TCLCMD-1041          1  current_design should use the top cell a...
+[05/25 00:09:16     24s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[05/25 00:09:16     24s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[05/25 00:09:16     24s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/25 00:09:16     24s] *** Message Summary: 97 warning(s), 0 error(s)
+[05/25 00:09:16     24s] 
+[05/25 00:10:05     26s] <CMD> getIoFlowFlag
+[05/25 00:11:55     30s] <CMD> setIoFlowFlag 0
+[05/25 00:11:55     30s] <CMD> floorPlan -site CoreSite -r 1 0.7 30.0 30.0 30.0 30.0
+[05/25 00:11:55     30s] Adjusting Core to Bottom to: 30.1800.
+[05/25 00:11:55     30s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:11:55     30s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:11:55     30s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:11:55     30s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:11:55     30s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:11:55     30s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:11:55     30s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 00:11:55     30s] Type 'man IMPFP-3961' for more detail.
+[05/25 00:11:55     30s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[05/25 00:11:55     30s] <CMD> uiSetTool select
+[05/25 00:11:55     30s] <CMD> getIoFlowFlag
+[05/25 00:11:55     30s] <CMD> fit
+[05/25 00:12:55     32s] <CMD> zoomBox -53.13300 75.84000 917.27950 973.44000
+[05/25 00:12:55     32s] <CMD> zoomBox 29.91050 181.10350 854.76150 944.06400
+[05/25 00:12:58     32s] <CMD> zoomBox -39.57500 88.45600 930.83800 986.05650
+[05/25 00:12:59     32s] <CMD> zoomBox -121.32300 -20.54150 1020.33950 1035.45950
+[05/25 00:13:00     33s] <CMD> zoomBox -213.84850 -148.77350 1129.28450 1093.58100
+[05/25 00:14:10     35s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed May 25 00:14:10 2022
+  Total CPU time:     0:00:35
+  Total real time:    0:09:46
+  Peak memory (main): 765.04MB
+
+[05/25 00:14:10     35s] 
+[05/25 00:14:10     35s] *** Memory Usage v#1 (Current mem = 1007.145M, initial mem = 264.684M) ***
+[05/25 00:14:10     35s] 
+[05/25 00:14:10     35s] *** Summary of all messages that are not suppressed in this session:
+[05/25 00:14:10     35s] Severity  ID               Count  Summary                                  
+[05/25 00:14:10     35s] WARNING   IMPLF-155            6  ViaRule only supports routing/cut layer,...
+[05/25 00:14:10     35s] WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/25 00:14:10     35s] WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/25 00:14:10     35s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[05/25 00:14:10     35s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[05/25 00:14:10     35s] WARNING   IMPEXT-2766         11  The sheet resistance for layer %s is not...
+[05/25 00:14:10     35s] WARNING   IMPEXT-2773         11  The via resistance between layers %s and...
+[05/25 00:14:10     35s] WARNING   IMPSYC-2             5  Timing information is not defined for ce...
+[05/25 00:14:10     35s] WARNING   TCLCMD-1041          1  current_design should use the top cell a...
+[05/25 00:14:10     35s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[05/25 00:14:10     35s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[05/25 00:14:10     35s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/25 00:14:10     35s] *** Message Summary: 102 warning(s), 0 error(s)
+[05/25 00:14:10     35s] 
+[05/25 00:14:10     35s] --- Ending "Innovus" (totcpu=0:00:35.7, real=0:09:45, mem=1007.1M) ---

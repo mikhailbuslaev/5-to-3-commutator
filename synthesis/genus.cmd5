@@ -1,0 +1,8 @@
+# Cadence Genus(TM) Synthesis Solution, Version 19.10-p002_1, built May 21 2019 13:26:01
+
+# Date: Tue May 24 21:05:02 2022
+# Host: srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source syn.tcl
+source syn.tcl

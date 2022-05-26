@@ -1,0 +1,198 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.10-p002_1, built Tue May 21 03:26:01 PDT 2019
+Options: -legacy_ui 
+Date:    Tue May 24 19:35:09 2022
+Host:    srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB) (1584992760KB)
+PID:     193309
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (6 seconds elapsed).
+
+WARNING: This version of the tool is 1099 days old.
+legacy_genus:/> gui_show
+legacy_genus:/> set attribute lib_search_path ../library
+wrong # args: should be "set varName ?newValue?"
+legacy_genus:/> set_attribute lib_search_path ../library
+  Setting attribute of root '/': 'lib_search_path' = ../library
+legacy_genus:/> set_attribute library {gsclib045_fast.lib}
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+legacy_genus:/> set_attribute -h library
+
+Usage: ::legacy::set_attribute [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented 
+        as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+
+'set_attribute -h <attribute_name> <object_type>' will give you more 
+information. Both 'attribute_name' and 'object_type' support the wildcard ('*') 
+character for non-hidden attributes. Valid object types are: 
+
+        actual_scan_chain                 libcell 
+        actual_scan_segment               libpin 
+        analysis_view                     library 
+        attribute                         library_domain 
+        base_cell                         message 
+        base_cell_set                     mode 
+        base_pin                          modules 
+        blackbox                          net 
+        blockage                          nominal_condition 
+        boundary_scan_segment             opcg_domain 
+        bump                              opcg_mode 
+        clock                             operating_condition 
+        cluster                           pcell 
+        constant                          pg_lib_pin 
+        constraint_mode                   pg_net 
+        cost_group                        pgpin 
+        ctp_source                        pin 
+        def_pin                           pin_bus 
+        delay_corner                      pinstance 
+        design                            place_blockage 
+        dft_configuration_mode            pnet 
+        exception                         port 
+        external_delay                    port_bus 
+        flow                              power_domain 
+        flow_step                         power_intent_command_id 
+        fnet                              power_mode 
+        formal_verification_constraint    power_scope 
+        fpobject                          region 
+        gcell                             root 
+        group                             route_blockage 
+        hdl_arch                          route_rule 
+        hdl_bind                          routetype 
+        hdl_block                         row 
+        hdl_comp                          scan_chain 
+        hdl_impl                          scan_segment 
+        hdl_inst                          sdp_column 
+        hdl_label                         sdp_group 
+        hdl_lib                           sdp_instance 
+        hdl_oper                          sdp_row 
+        hdl_param                         specialnet 
+        hdl_pin                           state_retention_rule 
+        hdl_proc                          subdesign 
+        hdl_subp                          subport 
+        instance                          subport_bus 
+        isolation_rule                    test_bus_port 
+        jtag_instruction                  test_clock 
+        jtag_instruction_register         test_signal 
+        jtag_macro                        timing_condition 
+        jtag_port                         via 
+        layer                             virtual_techelt 
+        level_shifter_rule                wireload 
+        libarc                            
+legacy_genus:/> set_attribute -h library library
+
+Usage: ::legacy::set_attribute [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented 
+        as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+
+    attribute category: lib_ta
+
+    attribute name: library_type 
+          category: lib_ta (returns timing information of library cells) 
+       object type: library 
+       access type: read-only 
+         data type: string* 
+     default value: 
+              help: Type of library (whether target or link or both). 
+
+legacy_genus:/> set_attribute library gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_fast.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'gsclib045_fast.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_fast.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> set_attribute library fast_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'fast_vdd1v0_basicCells.lib'
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'fast_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'fast_vdd1v0_basicCells.lib' cannot be set for attribute 'library'.
+1
+legacy_genus:/> what is
+ambiguous command name "what": what_is what_is_list
+legacy_genus:/> vls
+./              designs/        hdl_libraries/  messages/       tech/         
+commands/       flows/          libraries/      object_types/   
+legacy_genus:/> vcd ..
+Error   : A required object parameter could not be found. [TUI-61] [vcd]
+        : An object named '..' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  vcd: sets position in object hierarchy 
+
+Usage: vcd [<object>]
+
+    [<object>]:
+        dos target directory 
+1
+legacy_genus:/> cd ..
+Error   : A required object parameter could not be found. [TUI-61] [vcd]
+        : An object named '..' could not be found.
+  vcd: sets position in object hierarchy 
+
+Usage: vcd [<object>]
+
+    [<object>]:
+        dos target directory 
+1
+legacy_genus:/> cd .
+legacy_genus:/> vls
+./              designs/        hdl_libraries/  messages/       tech/         
+commands/       flows/          libraries/      object_types/   
+legacy_genus:/> cd libraries
+legacy_genus:/libraries> vls
+./                  library_sets/       rc_corners/         timing_conditions/
+legacy_genus:/libraries> vcd library_sets
+legacy_genus:/libraries/library_sets> vls
+./                                     default_emulate_libset_max/          
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 742s, ST: 13s, FG: 13s, CPU: 2.2%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 12.5, cpu: 72, total: 1511.6G, free: 1405.7G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 745s, ST: 13s, FG: 13s, CPU: 2.3%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 12.5, cpu: 72, total: 1511.6G, free: 1405.6G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 748s, ST: 13s, FG: 13s, CPU: 2.3%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 12.5, cpu: 72, total: 1511.6G, free: 1405.6G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 756s, ST: 14s, FG: 14s, CPU: 2.2%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 12.5, cpu: 72, total: 1511.6G, free: 1405.8G}
+Normal exit.

@@ -1,0 +1,13 @@
+[05/25 19:44:15      0s] 
+[05/25 19:44:15      0s] Cadence Innovus(TM) Implementation System.
+[05/25 19:44:15      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/25 19:44:15      0s] 
+[05/25 19:44:15      0s] Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+[05/25 19:44:15      0s] Options:	
+[05/25 19:44:15      0s] Date:		Wed May 25 19:44:15 2022
+[05/25 19:44:15      0s] Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+[05/25 19:44:15      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/25 19:44:15      0s] 
+[05/25 19:44:15      0s] License:
+[05/25 19:44:15      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[05/25 19:44:15      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.

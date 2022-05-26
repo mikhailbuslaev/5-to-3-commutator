@@ -1,0 +1,1054 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.10-p002_1, built Tue May 21 03:26:01 PDT 2019
+Options: -legacy_ui 
+Date:    Tue May 24 20:48:48 2022
+Host:    srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB) (1584992760KB)
+PID:     259221
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 1099 days old.
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 20:49:08 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+
+Threads Configured:3
+
+  Message Summary for Library gsclib045_fast.lib:
+  ***********************************************
+  Could not find an attribute in the library. [LBR-436]: 574
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  ***********************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_tech.lef'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : The attribute or the value for this attribute is not allowed at this moment. [TUI-48] [set_attribute]
+        : attribute: 'lef_library', value: ' gsclib045_tech.lef  gsclib045_macro.lef  giolib045.lef'
+        : Cannot change the value of the attribute.
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 20:55:00 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_tech.lef'
+Error   : The attribute or the value for this attribute is not allowed at this moment. [TUI-48] [set_attribute]
+        : attribute: 'lef_library', value: '\gsclib045_tech.lef \gsclib045_macro.lef \giolib045.lef'
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 20:55:59 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_tech.lef'
+Error   : The attribute or the value for this attribute is not allowed at this moment. [TUI-48] [set_attribute]
+        : attribute: 'lef_library', value: '\gsclib045_tech.lef \gsclib045_macro.lef \giolib045.lef'
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 20:57:29 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : File error. [FILE-100] [set_attribute]
+        : Cannot open file 'gsclib045_tech.lef'
+Error   : The attribute or the value for this attribute is not allowed at this moment. [TUI-48] [set_attribute]
+        : attribute: 'lef_library', value: ' gsclib045_tech.lef  gsclib045_macro.lef  giolib045.lef'
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 20:58:02 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_M_EV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_M_WV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_M_EV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_M_WV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_M_EV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_M_WV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HH_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_VV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_VV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_VV_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_2x2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_2x2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_2x2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M7_M6_2x2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M8_M7_2x2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M9_M8_2x2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M10_M9_2x2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_VH_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_HH_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_HV_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_VV_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_M_NH_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_M_SH_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_1x2_VH_N_NEW' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M11_M10_1x2_VH_S_NEW' has no resistance value.
+
+  According to lef_library, there are total 11 routing layers [ V(5) / H(6) ]
+
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+        : The library cell will be treated as a timing-model. Make sure that the timing arcs and output function are defined correctly. Even if the cell intends to have dual-functionality, it cannot be unmapped or automatically inferred.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'lef_library' = /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/../library/gsclib045_tech.lef /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/../library/gsclib045_macro.lef /local/users/r10021492/Documents/BuslaevMR/cadence/che/syn/../library/giolib045.lef
+Warning : Cannot open file. [VLOGPT-650]
+        : File '–v2001'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'commutator' from file '../rtl/commutator.v'.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'multiplexer_8_to_1' in file '../rtl/commutator.v' on line 6.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'commutator'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : command: 'synthesize'
+        : The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.
+Error   : A required object parameter could not be found. [TUI-61] [synthesize]
+        : An object of type 'design' named '–to_mapped' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  synthesize: synthesizes the design 
+
+Usage: synthesize [-to_generic] [-to_mapped] [-to_clock_gated] [-to_placed]
+           [-effort <string>] [-incremental] [-no_incremental] [-spatial]
+           [<design>+]
+
+    [-to_generic]:
+        stops after RTL is optimized (default for a design that has not been 
+        RTL-optimized) 
+    [-to_mapped]:
+        stops after technology mapping (default for generic and mapped designs) 
+    [-to_clock_gated]:
+        stops after design is clock gated 
+    [-to_placed]:
+        stops after the design is placed and optimized 
+    [-effort <string>]:
+        effort during optimization (high, medium(default), low, or express) 
+    [-incremental]:
+        incrementally optimizes mapped gates 
+    [-no_incremental]:
+        does not incrementally optimize mapped gates 
+    [-spatial]:
+        performs a quick placement to optimize the mapped gates 
+    [<design>+]:
+        the name of the design(s) 
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 21:00:37 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+        : Set the 'lef_library' attribute before doing 'elab'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value ' gsclib045_tech.lef  gsclib045_macro.lef  giolib045.lef' cannot be set for attribute 'lef_library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 21:03:10 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_tech.lef gsclib045_macro.lef giolib045.lef' cannot be set for attribute 'lef_library'.
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 21:03:53 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'gsclib045_tech.lef /
+gsclib045_macro.lef /
+giolib045.lef' cannot be set for attribute 'lef_library'.
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 21:04:18 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value ' gsclib045_tech.lef  gsclib045_macro.lef  giolib045.lef' cannot be set for attribute 'lef_library'.
+1
+legacy_genus:/> source syn.tcl
+Sourcing './syn.tcl' (Tue May 24 21:04:52 MSK 2022)...
+  Setting attribute of root '/': 'lib_search_path' = ../library
+Freeing libraries in memory (gsclib045_fast.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Setting attribute of root '/': 'library' = gsclib045_fast.lib
+Error   : Lef files are read when design exists. [PHYS-6187] [set_attribute]
+        : Lef files, if any, should be read before 'elaboration'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value ' gsclib045_tech.lef  gsclib045_macro.lef  giolib045.lef' cannot be set for attribute 'lef_library'.
+1

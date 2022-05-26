@@ -1,0 +1,55 @@
+[05/24 22:18:00      0s] 
+[05/24 22:18:00      0s] Cadence Innovus(TM) Implementation System.
+[05/24 22:18:00      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/24 22:18:00      0s] 
+[05/24 22:18:00      0s] Version:	v19.10-p002_1, built Fri Apr 19 15:18:11 PDT 2019
+[05/24 22:18:00      0s] Options:	
+[05/24 22:18:00      0s] Date:		Tue May 24 22:18:00 2022
+[05/24 22:18:00      0s] Host:		srv-eda-04 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6150 CPU @ 2.70GHz 25344KB)
+[05/24 22:18:00      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/24 22:18:00      0s] 
+[05/24 22:18:00      0s] License:
+[05/24 22:18:00      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[05/24 22:18:00      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/24 22:18:10      9s] @(#)CDS: Innovus v19.10-p002_1 (64bit) 04/19/2019 15:18 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:18:10      9s] @(#)CDS: NanoRoute 19.10-p002_1 NR190418-1643/19_10-UB (database version 18.20, 458.7.1) {superthreading v1.51}
+[05/24 22:18:10      9s] @(#)CDS: AAE 19.10-b002 (64bit) 04/19/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:18:10      9s] @(#)CDS: CTE 19.10-p002_1 () Apr 19 2019 06:39:48 ( )
+[05/24 22:18:10      9s] @(#)CDS: SYNTECH 19.10-b001_1 () Apr  4 2019 03:00:51 ( )
+[05/24 22:18:10      9s] @(#)CDS: CPE v19.10-p002
+[05/24 22:18:10      9s] @(#)CDS: IQuantus/TQuantus 19.1.0-e101 (64bit) Thu Feb 28 10:29:46 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/24 22:18:10      9s] @(#)CDS: OA 22.60-p012 Thu Dec 20 13:36:08 2018
+[05/24 22:18:10      9s] @(#)CDS: SGN 18.10-d003 (18-Jul-2018) (64 bit executable, Qt5.9.1)
+[05/24 22:18:10      9s] @(#)CDS: RCDB 11.14.18
+[05/24 22:18:10      9s] @(#)CDS: STYLUS 19.10-b001_1 (03/15/2019 08:18 PDT)
+[05/24 22:18:10      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_40516_srv-eda-04_r10021492_nRrDhv.
+
+[05/24 22:18:10      9s] Change the soft stacksize limit to 0.2%RAM (3095 mbytes). Set global soft_stack_size_limit to change the value.
+[05/24 22:18:10     10s] 
+[05/24 22:18:10     10s] **INFO:  MMMC transition support version v31-84 
+[05/24 22:18:10     10s] 
+[05/24 22:18:10     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/24 22:18:10     10s] <CMD> suppressMessage ENCEXT-2799
+[05/24 22:18:10     10s] <CMD> getVersion
+[05/24 22:18:11     10s] [INFO] Loading PVS 16.15 fill procedures
+[05/24 22:18:11     10s] <CMD> win
+[05/24 22:21:38     21s] <CMD> set init_gnd_net {vssc vsso}
+[05/24 22:21:38     21s] <CMD> set init_lef_file {../gsclib045_tech.lef ../gsclib045_macro.lef ../giolib045.lef}
+[05/24 22:21:38     21s] <CMD> set init_verilog genus.v
+[05/24 22:21:38     21s] <CMD> set init_mmmc_file genus.mmode.tcl
+[05/24 22:21:38     21s] <CMD> set init_top_cell top
+[05/24 22:21:38     21s] <CMD> set init_pwr_net {vddc vddo}
+[05/24 22:21:38     21s] <CMD> init_design
+[05/24 22:21:38     21s] #% Begin Load MMMC data ... (date=05/24 22:21:38, mem=524.3M)
+[05/24 22:21:38     21s] **ERROR: (TCLCMD-989):	cannot open SDC file 'genus_invs_des/genus._default_constraint_mode_.sdc' for mode '_default_constraint_mode_'
+[05/24 22:31:07     42s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/24 22:31:10     42s] Innovus terminated by user interrupt.
+[05/24 22:31:10     42s] 
+[05/24 22:31:10     42s] *** Memory Usage v#1 (Current mem = 748.797M, initial mem = 256.684M) ***
+[05/24 22:31:10     42s] 
+[05/24 22:31:10     42s] *** Summary of all messages that are not suppressed in this session:
+[05/24 22:31:10     42s] Severity  ID               Count  Summary                                  
+[05/24 22:31:10     42s] ERROR     TCLCMD-989           1  cannot open SDC file '%s' for mode '%s'  
+[05/24 22:31:10     42s] *** Message Summary: 0 warning(s), 1 error(s)
+[05/24 22:31:10     42s] 
+[05/24 22:31:10     42s] --- Ending "Innovus" (totcpu=0:00:42.6, real=0:13:10, mem=748.8M) ---
